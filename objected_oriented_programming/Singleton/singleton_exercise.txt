@@ -1,0 +1,16 @@
+5.3 - Classe java.lang.Math:
+    Lembra um Singleton em razão de aparentemente haver um construtor privado que não permite que subclasses
+    tenham acesso.
+
+  Classe PrinterManager:
+    Não aparenta ser um Singleton em razão de não podermos ver se existe uma lógica interna da classe
+    que ao chamarmos uma instância a classe nos levaria sempre a primeira mesma instanciada.
+
+  Classe PrintSpooler:
+    Não aparenta ser um Singleton em razão de não podermos ver se existe uma lógica interna da classe
+    que ao chamarmos uma instância a classe nos levaria sempre a primeira mesma instanciada.
+
+
+  Classe java.lang.System:
+    Não aparenta ser Singleton em razão de não haver construtor privado impedindo subclasses de acessarem,
+    muito menos uma instância privada.
