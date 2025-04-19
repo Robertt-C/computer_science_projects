@@ -68,3 +68,7 @@ def test_should_not_accept_domain_part_with_invalid_char():
 def test_should_not_accept_email_with_more_than_one_at():
     email = 'any@@mail.com'
     assert not validate(email)
+
+def test_should_accept_strings_with_320_chars():
+    email = 'l' * 64 + '@' + 'd' * 128 + '.' + 'd' * 126
+    assert validate(email)
