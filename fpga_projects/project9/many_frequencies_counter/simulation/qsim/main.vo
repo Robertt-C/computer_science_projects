@@ -1,0 +1,2249 @@
+// Copyright (C) 2017  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition"
+
+// DATE "11/24/2023 12:15:37"
+
+// 
+// Device: Altera EP4CE115F29C7 Package FBGA780
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module main (
+	fpga_clock,
+	reset,
+	select1,
+	select2,
+	filtered_clock,
+	Q,
+	a,
+	b,
+	c,
+	d,
+	e,
+	f,
+	g);
+input 	fpga_clock;
+input 	reset;
+input 	select1;
+input 	select2;
+output 	filtered_clock;
+output 	[3:0] Q;
+output 	a;
+output 	b;
+output 	c;
+output 	d;
+output 	e;
+output 	f;
+output 	g;
+
+// Design Ports Information
+// filtered_clock	=>  Location: PIN_AC14,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Q[0]	=>  Location: PIN_A17,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Q[1]	=>  Location: PIN_H15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Q[2]	=>  Location: PIN_C16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Q[3]	=>  Location: PIN_AB21,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// a	=>  Location: PIN_C15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// b	=>  Location: PIN_E15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// c	=>  Location: PIN_D16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// d	=>  Location: PIN_D15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// e	=>  Location: PIN_B17,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// f	=>  Location: PIN_F15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// g	=>  Location: PIN_J15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// select1	=>  Location: PIN_AB14,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// select2	=>  Location: PIN_AG12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// fpga_clock	=>  Location: PIN_J1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// reset	=>  Location: PIN_Y2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \filtered_clock~output_o ;
+wire \Q[0]~output_o ;
+wire \Q[1]~output_o ;
+wire \Q[2]~output_o ;
+wire \Q[3]~output_o ;
+wire \a~output_o ;
+wire \b~output_o ;
+wire \c~output_o ;
+wire \d~output_o ;
+wire \e~output_o ;
+wire \f~output_o ;
+wire \g~output_o ;
+wire \fpga_clock~input_o ;
+wire \fpga_clock~inputclkctrl_outclk ;
+wire \frequency_divider|out[0]~29_combout ;
+wire \select1~input_o ;
+wire \frequency_divider|Equal3~0_combout ;
+wire \frequency_divider|out[26]~84 ;
+wire \frequency_divider|out[27]~85_combout ;
+wire \frequency_divider|out[27]~86 ;
+wire \frequency_divider|out[28]~87_combout ;
+wire \frequency_divider|Equal0~5_combout ;
+wire \frequency_divider|Equal1~0_combout ;
+wire \frequency_divider|Equal0~4_combout ;
+wire \frequency_divider|Equal2~0_combout ;
+wire \frequency_divider|Equal0~1_combout ;
+wire \frequency_divider|Equal0~2_combout ;
+wire \frequency_divider|Equal0~0_combout ;
+wire \frequency_divider|Equal0~3_combout ;
+wire \frequency_divider|Equal2~1_combout ;
+wire \frequency_divider|Equal2~2_combout ;
+wire \select2~input_o ;
+wire \frequency_divider|Equal0~6_combout ;
+wire \frequency_divider|Equal0~7_combout ;
+wire \frequency_divider|Equal0~8_combout ;
+wire \frequency_divider|Equal0~9_combout ;
+wire \frequency_divider|Equal1~1_combout ;
+wire \frequency_divider|Equal1~2_combout ;
+wire \frequency_divider|Equal1~3_combout ;
+wire \frequency_divider|out[28]~31_combout ;
+wire \frequency_divider|out[28]~32_combout ;
+wire \frequency_divider|out[0]~30 ;
+wire \frequency_divider|out[1]~33_combout ;
+wire \frequency_divider|out[1]~34 ;
+wire \frequency_divider|out[2]~35_combout ;
+wire \frequency_divider|out[2]~36 ;
+wire \frequency_divider|out[3]~37_combout ;
+wire \frequency_divider|out[3]~38 ;
+wire \frequency_divider|out[4]~39_combout ;
+wire \frequency_divider|out[4]~40 ;
+wire \frequency_divider|out[5]~41_combout ;
+wire \frequency_divider|out[5]~42 ;
+wire \frequency_divider|out[6]~43_combout ;
+wire \frequency_divider|out[6]~44 ;
+wire \frequency_divider|out[7]~45_combout ;
+wire \frequency_divider|out[7]~46 ;
+wire \frequency_divider|out[8]~47_combout ;
+wire \frequency_divider|out[8]~48 ;
+wire \frequency_divider|out[9]~49_combout ;
+wire \frequency_divider|out[9]~50 ;
+wire \frequency_divider|out[10]~51_combout ;
+wire \frequency_divider|out[10]~52 ;
+wire \frequency_divider|out[11]~53_combout ;
+wire \frequency_divider|out[11]~54 ;
+wire \frequency_divider|out[12]~55_combout ;
+wire \frequency_divider|out[12]~56 ;
+wire \frequency_divider|out[13]~57_combout ;
+wire \frequency_divider|out[13]~58 ;
+wire \frequency_divider|out[14]~59_combout ;
+wire \frequency_divider|out[14]~60 ;
+wire \frequency_divider|out[15]~61_combout ;
+wire \frequency_divider|out[15]~62 ;
+wire \frequency_divider|out[16]~63_combout ;
+wire \frequency_divider|out[16]~64 ;
+wire \frequency_divider|out[17]~65_combout ;
+wire \frequency_divider|out[17]~66 ;
+wire \frequency_divider|out[18]~67_combout ;
+wire \frequency_divider|out[18]~68 ;
+wire \frequency_divider|out[19]~69_combout ;
+wire \frequency_divider|out[19]~70 ;
+wire \frequency_divider|out[20]~71_combout ;
+wire \frequency_divider|out[20]~72 ;
+wire \frequency_divider|out[21]~73_combout ;
+wire \frequency_divider|out[21]~74 ;
+wire \frequency_divider|out[22]~75_combout ;
+wire \frequency_divider|out[22]~76 ;
+wire \frequency_divider|out[23]~77_combout ;
+wire \frequency_divider|out[23]~78 ;
+wire \frequency_divider|out[24]~79_combout ;
+wire \frequency_divider|out[24]~80 ;
+wire \frequency_divider|out[25]~81_combout ;
+wire \frequency_divider|out[25]~82 ;
+wire \frequency_divider|out[26]~83_combout ;
+wire \frequency_divider|Equal3~2_combout ;
+wire \frequency_divider|Equal3~1_combout ;
+wire \frequency_divider|Equal3~3_combout ;
+wire \frequency_divider|Mux29~0_combout ;
+wire \frequency_divider|Mux29~1_combout ;
+wire \frequency_divider|filtered_clock~q ;
+wire \frequency_divider|filtered_clock~clkctrl_outclk ;
+wire \counter|Q[0]~2_combout ;
+wire \reset~input_o ;
+wire \reset~inputclkctrl_outclk ;
+wire \counter|Q[1]~0_combout ;
+wire \counter|Q[2]~1_combout ;
+wire \decoder|WideOr0~0_combout ;
+wire \decoder|WideOr1~0_combout ;
+wire \decoder|WideOr2~0_combout ;
+wire \decoder|WideOr3~0_combout ;
+wire \decoder|WideOr4~0_combout ;
+wire \decoder|WideOr5~0_combout ;
+wire \decoder|WideOr6~0_combout ;
+wire [28:0] \frequency_divider|out ;
+wire [3:0] \counter|Q ;
+
+
+hard_block auto_generated_inst(
+	.devpor(devpor),
+	.devclrn(devclrn),
+	.devoe(devoe));
+
+// Location: IOOBUF_X56_Y0_N23
+cycloneive_io_obuf \filtered_clock~output (
+	.i(\frequency_divider|filtered_clock~q ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\filtered_clock~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \filtered_clock~output .bus_hold = "false";
+defparam \filtered_clock~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X60_Y73_N2
+cycloneive_io_obuf \Q[0]~output (
+	.i(\counter|Q [0]),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Q[0]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Q[0]~output .bus_hold = "false";
+defparam \Q[0]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X60_Y73_N16
+cycloneive_io_obuf \Q[1]~output (
+	.i(\counter|Q [1]),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Q[1]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Q[1]~output .bus_hold = "false";
+defparam \Q[1]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X62_Y73_N16
+cycloneive_io_obuf \Q[2]~output (
+	.i(\counter|Q [2]),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Q[2]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Q[2]~output .bus_hold = "false";
+defparam \Q[2]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X109_Y0_N9
+cycloneive_io_obuf \Q[3]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Q[3]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Q[3]~output .bus_hold = "false";
+defparam \Q[3]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X58_Y73_N16
+cycloneive_io_obuf \a~output (
+	.i(\decoder|WideOr0~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\a~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \a~output .bus_hold = "false";
+defparam \a~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X58_Y73_N9
+cycloneive_io_obuf \b~output (
+	.i(\decoder|WideOr1~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\b~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \b~output .bus_hold = "false";
+defparam \b~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X62_Y73_N23
+cycloneive_io_obuf \c~output (
+	.i(\decoder|WideOr2~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\c~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \c~output .bus_hold = "false";
+defparam \c~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X58_Y73_N23
+cycloneive_io_obuf \d~output (
+	.i(\decoder|WideOr3~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\d~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \d~output .bus_hold = "false";
+defparam \d~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X60_Y73_N9
+cycloneive_io_obuf \e~output (
+	.i(\decoder|WideOr4~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\e~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \e~output .bus_hold = "false";
+defparam \e~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X58_Y73_N2
+cycloneive_io_obuf \f~output (
+	.i(\decoder|WideOr5~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\f~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \f~output .bus_hold = "false";
+defparam \f~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X60_Y73_N23
+cycloneive_io_obuf \g~output (
+	.i(!\decoder|WideOr6~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\g~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \g~output .bus_hold = "false";
+defparam \g~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y36_N8
+cycloneive_io_ibuf \fpga_clock~input (
+	.i(fpga_clock),
+	.ibar(gnd),
+	.o(\fpga_clock~input_o ));
+// synopsys translate_off
+defparam \fpga_clock~input .bus_hold = "false";
+defparam \fpga_clock~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: CLKCTRL_G2
+cycloneive_clkctrl \fpga_clock~inputclkctrl (
+	.ena(vcc),
+	.inclk({vcc,vcc,vcc,\fpga_clock~input_o }),
+	.clkselect(2'b00),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.outclk(\fpga_clock~inputclkctrl_outclk ));
+// synopsys translate_off
+defparam \fpga_clock~inputclkctrl .clock_type = "global clock";
+defparam \fpga_clock~inputclkctrl .ena_register_mode = "none";
+// synopsys translate_on
+
+// Location: LCCOMB_X53_Y5_N4
+cycloneive_lcell_comb \frequency_divider|out[0]~29 (
+// Equation(s):
+// \frequency_divider|out[0]~29_combout  = \frequency_divider|out [0] $ (VCC)
+// \frequency_divider|out[0]~30  = CARRY(\frequency_divider|out [0])
+
+	.dataa(gnd),
+	.datab(\frequency_divider|out [0]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(gnd),
+	.combout(\frequency_divider|out[0]~29_combout ),
+	.cout(\frequency_divider|out[0]~30 ));
+// synopsys translate_off
+defparam \frequency_divider|out[0]~29 .lut_mask = 16'h33CC;
+defparam \frequency_divider|out[0]~29 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: IOIBUF_X54_Y0_N15
+cycloneive_io_ibuf \select1~input (
+	.i(select1),
+	.ibar(gnd),
+	.o(\select1~input_o ));
+// synopsys translate_off
+defparam \select1~input .bus_hold = "false";
+defparam \select1~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X54_Y4_N8
+cycloneive_lcell_comb \frequency_divider|Equal3~0 (
+// Equation(s):
+// \frequency_divider|Equal3~0_combout  = (\frequency_divider|out [15] & (!\frequency_divider|out [6] & (!\frequency_divider|out [11] & \frequency_divider|out [23])))
+
+	.dataa(\frequency_divider|out [15]),
+	.datab(\frequency_divider|out [6]),
+	.datac(\frequency_divider|out [11]),
+	.datad(\frequency_divider|out [23]),
+	.cin(gnd),
+	.combout(\frequency_divider|Equal3~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \frequency_divider|Equal3~0 .lut_mask = 16'h0200;
+defparam \frequency_divider|Equal3~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X53_Y4_N24
+cycloneive_lcell_comb \frequency_divider|out[26]~83 (
+// Equation(s):
+// \frequency_divider|out[26]~83_combout  = (\frequency_divider|out [26] & (\frequency_divider|out[25]~82  $ (GND))) # (!\frequency_divider|out [26] & (!\frequency_divider|out[25]~82  & VCC))
+// \frequency_divider|out[26]~84  = CARRY((\frequency_divider|out [26] & !\frequency_divider|out[25]~82 ))
+
+	.dataa(gnd),
+	.datab(\frequency_divider|out [26]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\frequency_divider|out[25]~82 ),
+	.combout(\frequency_divider|out[26]~83_combout ),
+	.cout(\frequency_divider|out[26]~84 ));
+// synopsys translate_off
+defparam \frequency_divider|out[26]~83 .lut_mask = 16'hC30C;
+defparam \frequency_divider|out[26]~83 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: LCCOMB_X53_Y4_N26
+cycloneive_lcell_comb \frequency_divider|out[27]~85 (
+// Equation(s):
+// \frequency_divider|out[27]~85_combout  = (\frequency_divider|out [27] & (!\frequency_divider|out[26]~84 )) # (!\frequency_divider|out [27] & ((\frequency_divider|out[26]~84 ) # (GND)))
+// \frequency_divider|out[27]~86  = CARRY((!\frequency_divider|out[26]~84 ) # (!\frequency_divider|out [27]))
+
+	.dataa(\frequency_divider|out [27]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\frequency_divider|out[26]~84 ),
+	.combout(\frequency_divider|out[27]~85_combout ),
+	.cout(\frequency_divider|out[27]~86 ));
+// synopsys translate_off
+defparam \frequency_divider|out[27]~85 .lut_mask = 16'h5A5F;
+defparam \frequency_divider|out[27]~85 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X53_Y4_N27
+dffeas \frequency_divider|out[27] (
+	.clk(\fpga_clock~inputclkctrl_outclk ),
+	.d(\frequency_divider|out[27]~85_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(\frequency_divider|out[28]~32_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\frequency_divider|out [27]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \frequency_divider|out[27] .is_wysiwyg = "true";
+defparam \frequency_divider|out[27] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X53_Y4_N28
+cycloneive_lcell_comb \frequency_divider|out[28]~87 (
+// Equation(s):
+// \frequency_divider|out[28]~87_combout  = \frequency_divider|out[27]~86  $ (!\frequency_divider|out [28])
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(\frequency_divider|out [28]),
+	.cin(\frequency_divider|out[27]~86 ),
+	.combout(\frequency_divider|out[28]~87_combout ),
+	.cout());
+// synopsys translate_off
+defparam \frequency_divider|out[28]~87 .lut_mask = 16'hF00F;
+defparam \frequency_divider|out[28]~87 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X53_Y4_N29
+dffeas \frequency_divider|out[28] (
+	.clk(\fpga_clock~inputclkctrl_outclk ),
+	.d(\frequency_divider|out[28]~87_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(\frequency_divider|out[28]~32_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\frequency_divider|out [28]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \frequency_divider|out[28] .is_wysiwyg = "true";
+defparam \frequency_divider|out[28] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X54_Y4_N24
+cycloneive_lcell_comb \frequency_divider|Equal0~5 (
+// Equation(s):
+// \frequency_divider|Equal0~5_combout  = (!\frequency_divider|out [9] & (!\frequency_divider|out [28] & (\frequency_divider|out [14] & \frequency_divider|out [20])))
+
+	.dataa(\frequency_divider|out [9]),
+	.datab(\frequency_divider|out [28]),
+	.datac(\frequency_divider|out [14]),
+	.datad(\frequency_divider|out [20]),
+	.cin(gnd),
+	.combout(\frequency_divider|Equal0~5_combout ),
+	.cout());
+// synopsys translate_off
+defparam \frequency_divider|Equal0~5 .lut_mask = 16'h1000;
+defparam \frequency_divider|Equal0~5 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X54_Y4_N0
+cycloneive_lcell_comb \frequency_divider|Equal1~0 (
+// Equation(s):
+// \frequency_divider|Equal1~0_combout  = (\frequency_divider|Equal3~0_combout  & \frequency_divider|Equal0~5_combout )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\frequency_divider|Equal3~0_combout ),
+	.datad(\frequency_divider|Equal0~5_combout ),
+	.cin(gnd),
+	.combout(\frequency_divider|Equal1~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \frequency_divider|Equal1~0 .lut_mask = 16'hF000;
+defparam \frequency_divider|Equal1~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X52_Y4_N26
+cycloneive_lcell_comb \frequency_divider|Equal0~4 (
+// Equation(s):
+// \frequency_divider|Equal0~4_combout  = (\frequency_divider|out [16] & (!\frequency_divider|out [7] & (\frequency_divider|out [24] & !\frequency_divider|out [17])))
+
+	.dataa(\frequency_divider|out [16]),
+	.datab(\frequency_divider|out [7]),
+	.datac(\frequency_divider|out [24]),
+	.datad(\frequency_divider|out [17]),
+	.cin(gnd),
+	.combout(\frequency_divider|Equal0~4_combout ),
+	.cout());
+// synopsys translate_off
+defparam \frequency_divider|Equal0~4 .lut_mask = 16'h0020;
+defparam \frequency_divider|Equal0~4 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X55_Y4_N8
+cycloneive_lcell_comb \frequency_divider|Equal2~0 (
+// Equation(s):
+// \frequency_divider|Equal2~0_combout  = (!\frequency_divider|out [12] & (\frequency_divider|out [8] & !\frequency_divider|out [19]))
+
+	.dataa(gnd),
+	.datab(\frequency_divider|out [12]),
+	.datac(\frequency_divider|out [8]),
+	.datad(\frequency_divider|out [19]),
+	.cin(gnd),
+	.combout(\frequency_divider|Equal2~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \frequency_divider|Equal2~0 .lut_mask = 16'h0030;
+defparam \frequency_divider|Equal2~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X53_Y5_N2
+cycloneive_lcell_comb \frequency_divider|Equal0~1 (
+// Equation(s):
+// \frequency_divider|Equal0~1_combout  = (\frequency_divider|out [13] & (!\frequency_divider|out [10] & (!\frequency_divider|out [5] & !\frequency_divider|out [4])))
+
+	.dataa(\frequency_divider|out [13]),
+	.datab(\frequency_divider|out [10]),
+	.datac(\frequency_divider|out [5]),
+	.datad(\frequency_divider|out [4]),
+	.cin(gnd),
+	.combout(\frequency_divider|Equal0~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \frequency_divider|Equal0~1 .lut_mask = 16'h0002;
+defparam \frequency_divider|Equal0~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X53_Y4_N30
+cycloneive_lcell_comb \frequency_divider|Equal0~2 (
+// Equation(s):
+// \frequency_divider|Equal0~2_combout  = (\frequency_divider|out [21] & (!\frequency_divider|out [27] & \frequency_divider|out [22]))
+
+	.dataa(gnd),
+	.datab(\frequency_divider|out [21]),
+	.datac(\frequency_divider|out [27]),
+	.datad(\frequency_divider|out [22]),
+	.cin(gnd),
+	.combout(\frequency_divider|Equal0~2_combout ),
+	.cout());
+// synopsys translate_off
+defparam \frequency_divider|Equal0~2 .lut_mask = 16'h0C00;
+defparam \frequency_divider|Equal0~2 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X53_Y5_N0
+cycloneive_lcell_comb \frequency_divider|Equal0~0 (
+// Equation(s):
+// \frequency_divider|Equal0~0_combout  = (!\frequency_divider|out [1] & (!\frequency_divider|out [2] & (!\frequency_divider|out [0] & !\frequency_divider|out [3])))
+
+	.dataa(\frequency_divider|out [1]),
+	.datab(\frequency_divider|out [2]),
+	.datac(\frequency_divider|out [0]),
+	.datad(\frequency_divider|out [3]),
+	.cin(gnd),
+	.combout(\frequency_divider|Equal0~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \frequency_divider|Equal0~0 .lut_mask = 16'h0001;
+defparam \frequency_divider|Equal0~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X54_Y4_N2
+cycloneive_lcell_comb \frequency_divider|Equal0~3 (
+// Equation(s):
+// \frequency_divider|Equal0~3_combout  = (\frequency_divider|Equal0~1_combout  & (\frequency_divider|Equal0~2_combout  & \frequency_divider|Equal0~0_combout ))
+
+	.dataa(\frequency_divider|Equal0~1_combout ),
+	.datab(\frequency_divider|Equal0~2_combout ),
+	.datac(gnd),
+	.datad(\frequency_divider|Equal0~0_combout ),
+	.cin(gnd),
+	.combout(\frequency_divider|Equal0~3_combout ),
+	.cout());
+// synopsys translate_off
+defparam \frequency_divider|Equal0~3 .lut_mask = 16'h8800;
+defparam \frequency_divider|Equal0~3 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X54_Y4_N18
+cycloneive_lcell_comb \frequency_divider|Equal2~1 (
+// Equation(s):
+// \frequency_divider|Equal2~1_combout  = (\frequency_divider|Equal0~4_combout  & (!\frequency_divider|out [25] & (\frequency_divider|Equal2~0_combout  & \frequency_divider|Equal0~3_combout )))
+
+	.dataa(\frequency_divider|Equal0~4_combout ),
+	.datab(\frequency_divider|out [25]),
+	.datac(\frequency_divider|Equal2~0_combout ),
+	.datad(\frequency_divider|Equal0~3_combout ),
+	.cin(gnd),
+	.combout(\frequency_divider|Equal2~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \frequency_divider|Equal2~1 .lut_mask = 16'h2000;
+defparam \frequency_divider|Equal2~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X54_Y4_N14
+cycloneive_lcell_comb \frequency_divider|Equal2~2 (
+// Equation(s):
+// \frequency_divider|Equal2~2_combout  = (\frequency_divider|out [18] & (\frequency_divider|Equal1~0_combout  & (\frequency_divider|out [26] & \frequency_divider|Equal2~1_combout )))
+
+	.dataa(\frequency_divider|out [18]),
+	.datab(\frequency_divider|Equal1~0_combout ),
+	.datac(\frequency_divider|out [26]),
+	.datad(\frequency_divider|Equal2~1_combout ),
+	.cin(gnd),
+	.combout(\frequency_divider|Equal2~2_combout ),
+	.cout());
+// synopsys translate_off
+defparam \frequency_divider|Equal2~2 .lut_mask = 16'h8000;
+defparam \frequency_divider|Equal2~2 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: IOIBUF_X54_Y0_N8
+cycloneive_io_ibuf \select2~input (
+	.i(select2),
+	.ibar(gnd),
+	.o(\select2~input_o ));
+// synopsys translate_off
+defparam \select2~input .bus_hold = "false";
+defparam \select2~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X54_Y4_N20
+cycloneive_lcell_comb \frequency_divider|Equal0~6 (
+// Equation(s):
+// \frequency_divider|Equal0~6_combout  = (\frequency_divider|out [19] & (\frequency_divider|out [12] & (!\frequency_divider|out [8] & !\frequency_divider|out [26])))
+
+	.dataa(\frequency_divider|out [19]),
+	.datab(\frequency_divider|out [12]),
+	.datac(\frequency_divider|out [8]),
+	.datad(\frequency_divider|out [26]),
+	.cin(gnd),
+	.combout(\frequency_divider|Equal0~6_combout ),
+	.cout());
+// synopsys translate_off
+defparam \frequency_divider|Equal0~6 .lut_mask = 16'h0008;
+defparam \frequency_divider|Equal0~6 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X54_Y4_N12
+cycloneive_lcell_comb \frequency_divider|Equal0~7 (
+// Equation(s):
+// \frequency_divider|Equal0~7_combout  = (\frequency_divider|out [11] & (\frequency_divider|out [6] & (!\frequency_divider|out [15] & \frequency_divider|out [18])))
+
+	.dataa(\frequency_divider|out [11]),
+	.datab(\frequency_divider|out [6]),
+	.datac(\frequency_divider|out [15]),
+	.datad(\frequency_divider|out [18]),
+	.cin(gnd),
+	.combout(\frequency_divider|Equal0~7_combout ),
+	.cout());
+// synopsys translate_off
+defparam \frequency_divider|Equal0~7 .lut_mask = 16'h0800;
+defparam \frequency_divider|Equal0~7 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X54_Y4_N22
+cycloneive_lcell_comb \frequency_divider|Equal0~8 (
+// Equation(s):
+// \frequency_divider|Equal0~8_combout  = (!\frequency_divider|out [23] & (\frequency_divider|Equal0~6_combout  & (\frequency_divider|Equal0~7_combout  & \frequency_divider|Equal0~5_combout )))
+
+	.dataa(\frequency_divider|out [23]),
+	.datab(\frequency_divider|Equal0~6_combout ),
+	.datac(\frequency_divider|Equal0~7_combout ),
+	.datad(\frequency_divider|Equal0~5_combout ),
+	.cin(gnd),
+	.combout(\frequency_divider|Equal0~8_combout ),
+	.cout());
+// synopsys translate_off
+defparam \frequency_divider|Equal0~8 .lut_mask = 16'h4000;
+defparam \frequency_divider|Equal0~8 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X54_Y4_N4
+cycloneive_lcell_comb \frequency_divider|Equal0~9 (
+// Equation(s):
+// \frequency_divider|Equal0~9_combout  = (\frequency_divider|Equal0~8_combout  & (!\frequency_divider|out [25] & (\frequency_divider|Equal0~4_combout  & \frequency_divider|Equal0~3_combout )))
+
+	.dataa(\frequency_divider|Equal0~8_combout ),
+	.datab(\frequency_divider|out [25]),
+	.datac(\frequency_divider|Equal0~4_combout ),
+	.datad(\frequency_divider|Equal0~3_combout ),
+	.cin(gnd),
+	.combout(\frequency_divider|Equal0~9_combout ),
+	.cout());
+// synopsys translate_off
+defparam \frequency_divider|Equal0~9 .lut_mask = 16'h2000;
+defparam \frequency_divider|Equal0~9 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X54_Y4_N30
+cycloneive_lcell_comb \frequency_divider|Equal1~1 (
+// Equation(s):
+// \frequency_divider|Equal1~1_combout  = (!\frequency_divider|out [18] & (\frequency_divider|out [17] & (!\frequency_divider|out [16] & \frequency_divider|out [7])))
+
+	.dataa(\frequency_divider|out [18]),
+	.datab(\frequency_divider|out [17]),
+	.datac(\frequency_divider|out [16]),
+	.datad(\frequency_divider|out [7]),
+	.cin(gnd),
+	.combout(\frequency_divider|Equal1~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \frequency_divider|Equal1~1 .lut_mask = 16'h0400;
+defparam \frequency_divider|Equal1~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X54_Y4_N16
+cycloneive_lcell_comb \frequency_divider|Equal1~2 (
+// Equation(s):
+// \frequency_divider|Equal1~2_combout  = (!\frequency_divider|out [24] & (\frequency_divider|out [25] & (\frequency_divider|Equal1~1_combout  & \frequency_divider|Equal1~0_combout )))
+
+	.dataa(\frequency_divider|out [24]),
+	.datab(\frequency_divider|out [25]),
+	.datac(\frequency_divider|Equal1~1_combout ),
+	.datad(\frequency_divider|Equal1~0_combout ),
+	.cin(gnd),
+	.combout(\frequency_divider|Equal1~2_combout ),
+	.cout());
+// synopsys translate_off
+defparam \frequency_divider|Equal1~2 .lut_mask = 16'h4000;
+defparam \frequency_divider|Equal1~2 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X54_Y4_N10
+cycloneive_lcell_comb \frequency_divider|Equal1~3 (
+// Equation(s):
+// \frequency_divider|Equal1~3_combout  = (\frequency_divider|Equal0~6_combout  & (\frequency_divider|Equal1~2_combout  & \frequency_divider|Equal0~3_combout ))
+
+	.dataa(\frequency_divider|Equal0~6_combout ),
+	.datab(\frequency_divider|Equal1~2_combout ),
+	.datac(gnd),
+	.datad(\frequency_divider|Equal0~3_combout ),
+	.cin(gnd),
+	.combout(\frequency_divider|Equal1~3_combout ),
+	.cout());
+// synopsys translate_off
+defparam \frequency_divider|Equal1~3 .lut_mask = 16'h8800;
+defparam \frequency_divider|Equal1~3 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X54_Y4_N28
+cycloneive_lcell_comb \frequency_divider|out[28]~31 (
+// Equation(s):
+// \frequency_divider|out[28]~31_combout  = (\select1~input_o  & (\select2~input_o )) # (!\select1~input_o  & ((\select2~input_o  & ((\frequency_divider|Equal1~3_combout ))) # (!\select2~input_o  & (\frequency_divider|Equal0~9_combout ))))
+
+	.dataa(\select1~input_o ),
+	.datab(\select2~input_o ),
+	.datac(\frequency_divider|Equal0~9_combout ),
+	.datad(\frequency_divider|Equal1~3_combout ),
+	.cin(gnd),
+	.combout(\frequency_divider|out[28]~31_combout ),
+	.cout());
+// synopsys translate_off
+defparam \frequency_divider|out[28]~31 .lut_mask = 16'hDC98;
+defparam \frequency_divider|out[28]~31 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X54_Y4_N6
+cycloneive_lcell_comb \frequency_divider|out[28]~32 (
+// Equation(s):
+// \frequency_divider|out[28]~32_combout  = (\select1~input_o  & ((\frequency_divider|out[28]~31_combout  & ((\frequency_divider|Equal3~3_combout ))) # (!\frequency_divider|out[28]~31_combout  & (\frequency_divider|Equal2~2_combout )))) # (!\select1~input_o  
+// & (((\frequency_divider|out[28]~31_combout ))))
+
+	.dataa(\select1~input_o ),
+	.datab(\frequency_divider|Equal2~2_combout ),
+	.datac(\frequency_divider|Equal3~3_combout ),
+	.datad(\frequency_divider|out[28]~31_combout ),
+	.cin(gnd),
+	.combout(\frequency_divider|out[28]~32_combout ),
+	.cout());
+// synopsys translate_off
+defparam \frequency_divider|out[28]~32 .lut_mask = 16'hF588;
+defparam \frequency_divider|out[28]~32 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X53_Y5_N5
+dffeas \frequency_divider|out[0] (
+	.clk(\fpga_clock~inputclkctrl_outclk ),
+	.d(\frequency_divider|out[0]~29_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(\frequency_divider|out[28]~32_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\frequency_divider|out [0]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \frequency_divider|out[0] .is_wysiwyg = "true";
+defparam \frequency_divider|out[0] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X53_Y5_N6
+cycloneive_lcell_comb \frequency_divider|out[1]~33 (
+// Equation(s):
+// \frequency_divider|out[1]~33_combout  = (\frequency_divider|out [1] & (!\frequency_divider|out[0]~30 )) # (!\frequency_divider|out [1] & ((\frequency_divider|out[0]~30 ) # (GND)))
+// \frequency_divider|out[1]~34  = CARRY((!\frequency_divider|out[0]~30 ) # (!\frequency_divider|out [1]))
+
+	.dataa(\frequency_divider|out [1]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\frequency_divider|out[0]~30 ),
+	.combout(\frequency_divider|out[1]~33_combout ),
+	.cout(\frequency_divider|out[1]~34 ));
+// synopsys translate_off
+defparam \frequency_divider|out[1]~33 .lut_mask = 16'h5A5F;
+defparam \frequency_divider|out[1]~33 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X53_Y5_N7
+dffeas \frequency_divider|out[1] (
+	.clk(\fpga_clock~inputclkctrl_outclk ),
+	.d(\frequency_divider|out[1]~33_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(\frequency_divider|out[28]~32_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\frequency_divider|out [1]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \frequency_divider|out[1] .is_wysiwyg = "true";
+defparam \frequency_divider|out[1] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X53_Y5_N8
+cycloneive_lcell_comb \frequency_divider|out[2]~35 (
+// Equation(s):
+// \frequency_divider|out[2]~35_combout  = (\frequency_divider|out [2] & (\frequency_divider|out[1]~34  $ (GND))) # (!\frequency_divider|out [2] & (!\frequency_divider|out[1]~34  & VCC))
+// \frequency_divider|out[2]~36  = CARRY((\frequency_divider|out [2] & !\frequency_divider|out[1]~34 ))
+
+	.dataa(gnd),
+	.datab(\frequency_divider|out [2]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\frequency_divider|out[1]~34 ),
+	.combout(\frequency_divider|out[2]~35_combout ),
+	.cout(\frequency_divider|out[2]~36 ));
+// synopsys translate_off
+defparam \frequency_divider|out[2]~35 .lut_mask = 16'hC30C;
+defparam \frequency_divider|out[2]~35 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X53_Y5_N9
+dffeas \frequency_divider|out[2] (
+	.clk(\fpga_clock~inputclkctrl_outclk ),
+	.d(\frequency_divider|out[2]~35_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(\frequency_divider|out[28]~32_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\frequency_divider|out [2]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \frequency_divider|out[2] .is_wysiwyg = "true";
+defparam \frequency_divider|out[2] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X53_Y5_N10
+cycloneive_lcell_comb \frequency_divider|out[3]~37 (
+// Equation(s):
+// \frequency_divider|out[3]~37_combout  = (\frequency_divider|out [3] & (!\frequency_divider|out[2]~36 )) # (!\frequency_divider|out [3] & ((\frequency_divider|out[2]~36 ) # (GND)))
+// \frequency_divider|out[3]~38  = CARRY((!\frequency_divider|out[2]~36 ) # (!\frequency_divider|out [3]))
+
+	.dataa(\frequency_divider|out [3]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\frequency_divider|out[2]~36 ),
+	.combout(\frequency_divider|out[3]~37_combout ),
+	.cout(\frequency_divider|out[3]~38 ));
+// synopsys translate_off
+defparam \frequency_divider|out[3]~37 .lut_mask = 16'h5A5F;
+defparam \frequency_divider|out[3]~37 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X53_Y5_N11
+dffeas \frequency_divider|out[3] (
+	.clk(\fpga_clock~inputclkctrl_outclk ),
+	.d(\frequency_divider|out[3]~37_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(\frequency_divider|out[28]~32_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\frequency_divider|out [3]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \frequency_divider|out[3] .is_wysiwyg = "true";
+defparam \frequency_divider|out[3] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X53_Y5_N12
+cycloneive_lcell_comb \frequency_divider|out[4]~39 (
+// Equation(s):
+// \frequency_divider|out[4]~39_combout  = (\frequency_divider|out [4] & (\frequency_divider|out[3]~38  $ (GND))) # (!\frequency_divider|out [4] & (!\frequency_divider|out[3]~38  & VCC))
+// \frequency_divider|out[4]~40  = CARRY((\frequency_divider|out [4] & !\frequency_divider|out[3]~38 ))
+
+	.dataa(\frequency_divider|out [4]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\frequency_divider|out[3]~38 ),
+	.combout(\frequency_divider|out[4]~39_combout ),
+	.cout(\frequency_divider|out[4]~40 ));
+// synopsys translate_off
+defparam \frequency_divider|out[4]~39 .lut_mask = 16'hA50A;
+defparam \frequency_divider|out[4]~39 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X53_Y5_N13
+dffeas \frequency_divider|out[4] (
+	.clk(\fpga_clock~inputclkctrl_outclk ),
+	.d(\frequency_divider|out[4]~39_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(\frequency_divider|out[28]~32_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\frequency_divider|out [4]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \frequency_divider|out[4] .is_wysiwyg = "true";
+defparam \frequency_divider|out[4] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X53_Y5_N14
+cycloneive_lcell_comb \frequency_divider|out[5]~41 (
+// Equation(s):
+// \frequency_divider|out[5]~41_combout  = (\frequency_divider|out [5] & (!\frequency_divider|out[4]~40 )) # (!\frequency_divider|out [5] & ((\frequency_divider|out[4]~40 ) # (GND)))
+// \frequency_divider|out[5]~42  = CARRY((!\frequency_divider|out[4]~40 ) # (!\frequency_divider|out [5]))
+
+	.dataa(gnd),
+	.datab(\frequency_divider|out [5]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\frequency_divider|out[4]~40 ),
+	.combout(\frequency_divider|out[5]~41_combout ),
+	.cout(\frequency_divider|out[5]~42 ));
+// synopsys translate_off
+defparam \frequency_divider|out[5]~41 .lut_mask = 16'h3C3F;
+defparam \frequency_divider|out[5]~41 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X53_Y5_N15
+dffeas \frequency_divider|out[5] (
+	.clk(\fpga_clock~inputclkctrl_outclk ),
+	.d(\frequency_divider|out[5]~41_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(\frequency_divider|out[28]~32_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\frequency_divider|out [5]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \frequency_divider|out[5] .is_wysiwyg = "true";
+defparam \frequency_divider|out[5] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X53_Y5_N16
+cycloneive_lcell_comb \frequency_divider|out[6]~43 (
+// Equation(s):
+// \frequency_divider|out[6]~43_combout  = (\frequency_divider|out [6] & (\frequency_divider|out[5]~42  $ (GND))) # (!\frequency_divider|out [6] & (!\frequency_divider|out[5]~42  & VCC))
+// \frequency_divider|out[6]~44  = CARRY((\frequency_divider|out [6] & !\frequency_divider|out[5]~42 ))
+
+	.dataa(\frequency_divider|out [6]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\frequency_divider|out[5]~42 ),
+	.combout(\frequency_divider|out[6]~43_combout ),
+	.cout(\frequency_divider|out[6]~44 ));
+// synopsys translate_off
+defparam \frequency_divider|out[6]~43 .lut_mask = 16'hA50A;
+defparam \frequency_divider|out[6]~43 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X54_Y4_N11
+dffeas \frequency_divider|out[6] (
+	.clk(\fpga_clock~inputclkctrl_outclk ),
+	.d(gnd),
+	.asdata(\frequency_divider|out[6]~43_combout ),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(\frequency_divider|out[28]~32_combout ),
+	.sload(vcc),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\frequency_divider|out [6]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \frequency_divider|out[6] .is_wysiwyg = "true";
+defparam \frequency_divider|out[6] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X53_Y5_N18
+cycloneive_lcell_comb \frequency_divider|out[7]~45 (
+// Equation(s):
+// \frequency_divider|out[7]~45_combout  = (\frequency_divider|out [7] & (!\frequency_divider|out[6]~44 )) # (!\frequency_divider|out [7] & ((\frequency_divider|out[6]~44 ) # (GND)))
+// \frequency_divider|out[7]~46  = CARRY((!\frequency_divider|out[6]~44 ) # (!\frequency_divider|out [7]))
+
+	.dataa(gnd),
+	.datab(\frequency_divider|out [7]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\frequency_divider|out[6]~44 ),
+	.combout(\frequency_divider|out[7]~45_combout ),
+	.cout(\frequency_divider|out[7]~46 ));
+// synopsys translate_off
+defparam \frequency_divider|out[7]~45 .lut_mask = 16'h3C3F;
+defparam \frequency_divider|out[7]~45 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X52_Y4_N1
+dffeas \frequency_divider|out[7] (
+	.clk(\fpga_clock~inputclkctrl_outclk ),
+	.d(gnd),
+	.asdata(\frequency_divider|out[7]~45_combout ),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(\frequency_divider|out[28]~32_combout ),
+	.sload(vcc),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\frequency_divider|out [7]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \frequency_divider|out[7] .is_wysiwyg = "true";
+defparam \frequency_divider|out[7] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X53_Y5_N20
+cycloneive_lcell_comb \frequency_divider|out[8]~47 (
+// Equation(s):
+// \frequency_divider|out[8]~47_combout  = (\frequency_divider|out [8] & (\frequency_divider|out[7]~46  $ (GND))) # (!\frequency_divider|out [8] & (!\frequency_divider|out[7]~46  & VCC))
+// \frequency_divider|out[8]~48  = CARRY((\frequency_divider|out [8] & !\frequency_divider|out[7]~46 ))
+
+	.dataa(gnd),
+	.datab(\frequency_divider|out [8]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\frequency_divider|out[7]~46 ),
+	.combout(\frequency_divider|out[8]~47_combout ),
+	.cout(\frequency_divider|out[8]~48 ));
+// synopsys translate_off
+defparam \frequency_divider|out[8]~47 .lut_mask = 16'hC30C;
+defparam \frequency_divider|out[8]~47 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X55_Y4_N31
+dffeas \frequency_divider|out[8] (
+	.clk(\fpga_clock~inputclkctrl_outclk ),
+	.d(gnd),
+	.asdata(\frequency_divider|out[8]~47_combout ),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(\frequency_divider|out[28]~32_combout ),
+	.sload(vcc),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\frequency_divider|out [8]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \frequency_divider|out[8] .is_wysiwyg = "true";
+defparam \frequency_divider|out[8] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X53_Y5_N22
+cycloneive_lcell_comb \frequency_divider|out[9]~49 (
+// Equation(s):
+// \frequency_divider|out[9]~49_combout  = (\frequency_divider|out [9] & (!\frequency_divider|out[8]~48 )) # (!\frequency_divider|out [9] & ((\frequency_divider|out[8]~48 ) # (GND)))
+// \frequency_divider|out[9]~50  = CARRY((!\frequency_divider|out[8]~48 ) # (!\frequency_divider|out [9]))
+
+	.dataa(gnd),
+	.datab(\frequency_divider|out [9]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\frequency_divider|out[8]~48 ),
+	.combout(\frequency_divider|out[9]~49_combout ),
+	.cout(\frequency_divider|out[9]~50 ));
+// synopsys translate_off
+defparam \frequency_divider|out[9]~49 .lut_mask = 16'h3C3F;
+defparam \frequency_divider|out[9]~49 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X54_Y4_N3
+dffeas \frequency_divider|out[9] (
+	.clk(\fpga_clock~inputclkctrl_outclk ),
+	.d(gnd),
+	.asdata(\frequency_divider|out[9]~49_combout ),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(\frequency_divider|out[28]~32_combout ),
+	.sload(vcc),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\frequency_divider|out [9]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \frequency_divider|out[9] .is_wysiwyg = "true";
+defparam \frequency_divider|out[9] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X53_Y5_N24
+cycloneive_lcell_comb \frequency_divider|out[10]~51 (
+// Equation(s):
+// \frequency_divider|out[10]~51_combout  = (\frequency_divider|out [10] & (\frequency_divider|out[9]~50  $ (GND))) # (!\frequency_divider|out [10] & (!\frequency_divider|out[9]~50  & VCC))
+// \frequency_divider|out[10]~52  = CARRY((\frequency_divider|out [10] & !\frequency_divider|out[9]~50 ))
+
+	.dataa(\frequency_divider|out [10]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\frequency_divider|out[9]~50 ),
+	.combout(\frequency_divider|out[10]~51_combout ),
+	.cout(\frequency_divider|out[10]~52 ));
+// synopsys translate_off
+defparam \frequency_divider|out[10]~51 .lut_mask = 16'hA50A;
+defparam \frequency_divider|out[10]~51 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X53_Y5_N25
+dffeas \frequency_divider|out[10] (
+	.clk(\fpga_clock~inputclkctrl_outclk ),
+	.d(\frequency_divider|out[10]~51_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(\frequency_divider|out[28]~32_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\frequency_divider|out [10]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \frequency_divider|out[10] .is_wysiwyg = "true";
+defparam \frequency_divider|out[10] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X53_Y5_N26
+cycloneive_lcell_comb \frequency_divider|out[11]~53 (
+// Equation(s):
+// \frequency_divider|out[11]~53_combout  = (\frequency_divider|out [11] & (!\frequency_divider|out[10]~52 )) # (!\frequency_divider|out [11] & ((\frequency_divider|out[10]~52 ) # (GND)))
+// \frequency_divider|out[11]~54  = CARRY((!\frequency_divider|out[10]~52 ) # (!\frequency_divider|out [11]))
+
+	.dataa(gnd),
+	.datab(\frequency_divider|out [11]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\frequency_divider|out[10]~52 ),
+	.combout(\frequency_divider|out[11]~53_combout ),
+	.cout(\frequency_divider|out[11]~54 ));
+// synopsys translate_off
+defparam \frequency_divider|out[11]~53 .lut_mask = 16'h3C3F;
+defparam \frequency_divider|out[11]~53 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X54_Y4_N9
+dffeas \frequency_divider|out[11] (
+	.clk(\fpga_clock~inputclkctrl_outclk ),
+	.d(gnd),
+	.asdata(\frequency_divider|out[11]~53_combout ),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(\frequency_divider|out[28]~32_combout ),
+	.sload(vcc),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\frequency_divider|out [11]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \frequency_divider|out[11] .is_wysiwyg = "true";
+defparam \frequency_divider|out[11] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X53_Y5_N28
+cycloneive_lcell_comb \frequency_divider|out[12]~55 (
+// Equation(s):
+// \frequency_divider|out[12]~55_combout  = (\frequency_divider|out [12] & (\frequency_divider|out[11]~54  $ (GND))) # (!\frequency_divider|out [12] & (!\frequency_divider|out[11]~54  & VCC))
+// \frequency_divider|out[12]~56  = CARRY((\frequency_divider|out [12] & !\frequency_divider|out[11]~54 ))
+
+	.dataa(\frequency_divider|out [12]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\frequency_divider|out[11]~54 ),
+	.combout(\frequency_divider|out[12]~55_combout ),
+	.cout(\frequency_divider|out[12]~56 ));
+// synopsys translate_off
+defparam \frequency_divider|out[12]~55 .lut_mask = 16'hA50A;
+defparam \frequency_divider|out[12]~55 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X55_Y4_N29
+dffeas \frequency_divider|out[12] (
+	.clk(\fpga_clock~inputclkctrl_outclk ),
+	.d(gnd),
+	.asdata(\frequency_divider|out[12]~55_combout ),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(\frequency_divider|out[28]~32_combout ),
+	.sload(vcc),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\frequency_divider|out [12]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \frequency_divider|out[12] .is_wysiwyg = "true";
+defparam \frequency_divider|out[12] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X53_Y5_N30
+cycloneive_lcell_comb \frequency_divider|out[13]~57 (
+// Equation(s):
+// \frequency_divider|out[13]~57_combout  = (\frequency_divider|out [13] & (!\frequency_divider|out[12]~56 )) # (!\frequency_divider|out [13] & ((\frequency_divider|out[12]~56 ) # (GND)))
+// \frequency_divider|out[13]~58  = CARRY((!\frequency_divider|out[12]~56 ) # (!\frequency_divider|out [13]))
+
+	.dataa(\frequency_divider|out [13]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\frequency_divider|out[12]~56 ),
+	.combout(\frequency_divider|out[13]~57_combout ),
+	.cout(\frequency_divider|out[13]~58 ));
+// synopsys translate_off
+defparam \frequency_divider|out[13]~57 .lut_mask = 16'h5A5F;
+defparam \frequency_divider|out[13]~57 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X53_Y5_N31
+dffeas \frequency_divider|out[13] (
+	.clk(\fpga_clock~inputclkctrl_outclk ),
+	.d(\frequency_divider|out[13]~57_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(\frequency_divider|out[28]~32_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\frequency_divider|out [13]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \frequency_divider|out[13] .is_wysiwyg = "true";
+defparam \frequency_divider|out[13] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X53_Y4_N0
+cycloneive_lcell_comb \frequency_divider|out[14]~59 (
+// Equation(s):
+// \frequency_divider|out[14]~59_combout  = (\frequency_divider|out [14] & (\frequency_divider|out[13]~58  $ (GND))) # (!\frequency_divider|out [14] & (!\frequency_divider|out[13]~58  & VCC))
+// \frequency_divider|out[14]~60  = CARRY((\frequency_divider|out [14] & !\frequency_divider|out[13]~58 ))
+
+	.dataa(gnd),
+	.datab(\frequency_divider|out [14]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\frequency_divider|out[13]~58 ),
+	.combout(\frequency_divider|out[14]~59_combout ),
+	.cout(\frequency_divider|out[14]~60 ));
+// synopsys translate_off
+defparam \frequency_divider|out[14]~59 .lut_mask = 16'hC30C;
+defparam \frequency_divider|out[14]~59 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X54_Y4_N25
+dffeas \frequency_divider|out[14] (
+	.clk(\fpga_clock~inputclkctrl_outclk ),
+	.d(gnd),
+	.asdata(\frequency_divider|out[14]~59_combout ),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(\frequency_divider|out[28]~32_combout ),
+	.sload(vcc),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\frequency_divider|out [14]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \frequency_divider|out[14] .is_wysiwyg = "true";
+defparam \frequency_divider|out[14] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X53_Y4_N2
+cycloneive_lcell_comb \frequency_divider|out[15]~61 (
+// Equation(s):
+// \frequency_divider|out[15]~61_combout  = (\frequency_divider|out [15] & (!\frequency_divider|out[14]~60 )) # (!\frequency_divider|out [15] & ((\frequency_divider|out[14]~60 ) # (GND)))
+// \frequency_divider|out[15]~62  = CARRY((!\frequency_divider|out[14]~60 ) # (!\frequency_divider|out [15]))
+
+	.dataa(gnd),
+	.datab(\frequency_divider|out [15]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\frequency_divider|out[14]~60 ),
+	.combout(\frequency_divider|out[15]~61_combout ),
+	.cout(\frequency_divider|out[15]~62 ));
+// synopsys translate_off
+defparam \frequency_divider|out[15]~61 .lut_mask = 16'h3C3F;
+defparam \frequency_divider|out[15]~61 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X54_Y4_N13
+dffeas \frequency_divider|out[15] (
+	.clk(\fpga_clock~inputclkctrl_outclk ),
+	.d(gnd),
+	.asdata(\frequency_divider|out[15]~61_combout ),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(\frequency_divider|out[28]~32_combout ),
+	.sload(vcc),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\frequency_divider|out [15]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \frequency_divider|out[15] .is_wysiwyg = "true";
+defparam \frequency_divider|out[15] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X53_Y4_N4
+cycloneive_lcell_comb \frequency_divider|out[16]~63 (
+// Equation(s):
+// \frequency_divider|out[16]~63_combout  = (\frequency_divider|out [16] & (\frequency_divider|out[15]~62  $ (GND))) # (!\frequency_divider|out [16] & (!\frequency_divider|out[15]~62  & VCC))
+// \frequency_divider|out[16]~64  = CARRY((\frequency_divider|out [16] & !\frequency_divider|out[15]~62 ))
+
+	.dataa(gnd),
+	.datab(\frequency_divider|out [16]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\frequency_divider|out[15]~62 ),
+	.combout(\frequency_divider|out[16]~63_combout ),
+	.cout(\frequency_divider|out[16]~64 ));
+// synopsys translate_off
+defparam \frequency_divider|out[16]~63 .lut_mask = 16'hC30C;
+defparam \frequency_divider|out[16]~63 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X53_Y4_N5
+dffeas \frequency_divider|out[16] (
+	.clk(\fpga_clock~inputclkctrl_outclk ),
+	.d(\frequency_divider|out[16]~63_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(\frequency_divider|out[28]~32_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\frequency_divider|out [16]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \frequency_divider|out[16] .is_wysiwyg = "true";
+defparam \frequency_divider|out[16] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X53_Y4_N6
+cycloneive_lcell_comb \frequency_divider|out[17]~65 (
+// Equation(s):
+// \frequency_divider|out[17]~65_combout  = (\frequency_divider|out [17] & (!\frequency_divider|out[16]~64 )) # (!\frequency_divider|out [17] & ((\frequency_divider|out[16]~64 ) # (GND)))
+// \frequency_divider|out[17]~66  = CARRY((!\frequency_divider|out[16]~64 ) # (!\frequency_divider|out [17]))
+
+	.dataa(\frequency_divider|out [17]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\frequency_divider|out[16]~64 ),
+	.combout(\frequency_divider|out[17]~65_combout ),
+	.cout(\frequency_divider|out[17]~66 ));
+// synopsys translate_off
+defparam \frequency_divider|out[17]~65 .lut_mask = 16'h5A5F;
+defparam \frequency_divider|out[17]~65 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X53_Y4_N7
+dffeas \frequency_divider|out[17] (
+	.clk(\fpga_clock~inputclkctrl_outclk ),
+	.d(\frequency_divider|out[17]~65_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(\frequency_divider|out[28]~32_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\frequency_divider|out [17]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \frequency_divider|out[17] .is_wysiwyg = "true";
+defparam \frequency_divider|out[17] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X53_Y4_N8
+cycloneive_lcell_comb \frequency_divider|out[18]~67 (
+// Equation(s):
+// \frequency_divider|out[18]~67_combout  = (\frequency_divider|out [18] & (\frequency_divider|out[17]~66  $ (GND))) # (!\frequency_divider|out [18] & (!\frequency_divider|out[17]~66  & VCC))
+// \frequency_divider|out[18]~68  = CARRY((\frequency_divider|out [18] & !\frequency_divider|out[17]~66 ))
+
+	.dataa(gnd),
+	.datab(\frequency_divider|out [18]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\frequency_divider|out[17]~66 ),
+	.combout(\frequency_divider|out[18]~67_combout ),
+	.cout(\frequency_divider|out[18]~68 ));
+// synopsys translate_off
+defparam \frequency_divider|out[18]~67 .lut_mask = 16'hC30C;
+defparam \frequency_divider|out[18]~67 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X53_Y4_N9
+dffeas \frequency_divider|out[18] (
+	.clk(\fpga_clock~inputclkctrl_outclk ),
+	.d(\frequency_divider|out[18]~67_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(\frequency_divider|out[28]~32_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\frequency_divider|out [18]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \frequency_divider|out[18] .is_wysiwyg = "true";
+defparam \frequency_divider|out[18] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X53_Y4_N10
+cycloneive_lcell_comb \frequency_divider|out[19]~69 (
+// Equation(s):
+// \frequency_divider|out[19]~69_combout  = (\frequency_divider|out [19] & (!\frequency_divider|out[18]~68 )) # (!\frequency_divider|out [19] & ((\frequency_divider|out[18]~68 ) # (GND)))
+// \frequency_divider|out[19]~70  = CARRY((!\frequency_divider|out[18]~68 ) # (!\frequency_divider|out [19]))
+
+	.dataa(\frequency_divider|out [19]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\frequency_divider|out[18]~68 ),
+	.combout(\frequency_divider|out[19]~69_combout ),
+	.cout(\frequency_divider|out[19]~70 ));
+// synopsys translate_off
+defparam \frequency_divider|out[19]~69 .lut_mask = 16'h5A5F;
+defparam \frequency_divider|out[19]~69 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X53_Y4_N11
+dffeas \frequency_divider|out[19] (
+	.clk(\fpga_clock~inputclkctrl_outclk ),
+	.d(\frequency_divider|out[19]~69_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(\frequency_divider|out[28]~32_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\frequency_divider|out [19]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \frequency_divider|out[19] .is_wysiwyg = "true";
+defparam \frequency_divider|out[19] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X53_Y4_N12
+cycloneive_lcell_comb \frequency_divider|out[20]~71 (
+// Equation(s):
+// \frequency_divider|out[20]~71_combout  = (\frequency_divider|out [20] & (\frequency_divider|out[19]~70  $ (GND))) # (!\frequency_divider|out [20] & (!\frequency_divider|out[19]~70  & VCC))
+// \frequency_divider|out[20]~72  = CARRY((\frequency_divider|out [20] & !\frequency_divider|out[19]~70 ))
+
+	.dataa(\frequency_divider|out [20]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\frequency_divider|out[19]~70 ),
+	.combout(\frequency_divider|out[20]~71_combout ),
+	.cout(\frequency_divider|out[20]~72 ));
+// synopsys translate_off
+defparam \frequency_divider|out[20]~71 .lut_mask = 16'hA50A;
+defparam \frequency_divider|out[20]~71 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X53_Y4_N13
+dffeas \frequency_divider|out[20] (
+	.clk(\fpga_clock~inputclkctrl_outclk ),
+	.d(\frequency_divider|out[20]~71_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(\frequency_divider|out[28]~32_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\frequency_divider|out [20]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \frequency_divider|out[20] .is_wysiwyg = "true";
+defparam \frequency_divider|out[20] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X53_Y4_N14
+cycloneive_lcell_comb \frequency_divider|out[21]~73 (
+// Equation(s):
+// \frequency_divider|out[21]~73_combout  = (\frequency_divider|out [21] & (!\frequency_divider|out[20]~72 )) # (!\frequency_divider|out [21] & ((\frequency_divider|out[20]~72 ) # (GND)))
+// \frequency_divider|out[21]~74  = CARRY((!\frequency_divider|out[20]~72 ) # (!\frequency_divider|out [21]))
+
+	.dataa(\frequency_divider|out [21]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\frequency_divider|out[20]~72 ),
+	.combout(\frequency_divider|out[21]~73_combout ),
+	.cout(\frequency_divider|out[21]~74 ));
+// synopsys translate_off
+defparam \frequency_divider|out[21]~73 .lut_mask = 16'h5A5F;
+defparam \frequency_divider|out[21]~73 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X53_Y4_N15
+dffeas \frequency_divider|out[21] (
+	.clk(\fpga_clock~inputclkctrl_outclk ),
+	.d(\frequency_divider|out[21]~73_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(\frequency_divider|out[28]~32_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\frequency_divider|out [21]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \frequency_divider|out[21] .is_wysiwyg = "true";
+defparam \frequency_divider|out[21] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X53_Y4_N16
+cycloneive_lcell_comb \frequency_divider|out[22]~75 (
+// Equation(s):
+// \frequency_divider|out[22]~75_combout  = (\frequency_divider|out [22] & (\frequency_divider|out[21]~74  $ (GND))) # (!\frequency_divider|out [22] & (!\frequency_divider|out[21]~74  & VCC))
+// \frequency_divider|out[22]~76  = CARRY((\frequency_divider|out [22] & !\frequency_divider|out[21]~74 ))
+
+	.dataa(gnd),
+	.datab(\frequency_divider|out [22]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\frequency_divider|out[21]~74 ),
+	.combout(\frequency_divider|out[22]~75_combout ),
+	.cout(\frequency_divider|out[22]~76 ));
+// synopsys translate_off
+defparam \frequency_divider|out[22]~75 .lut_mask = 16'hC30C;
+defparam \frequency_divider|out[22]~75 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X53_Y4_N17
+dffeas \frequency_divider|out[22] (
+	.clk(\fpga_clock~inputclkctrl_outclk ),
+	.d(\frequency_divider|out[22]~75_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(\frequency_divider|out[28]~32_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\frequency_divider|out [22]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \frequency_divider|out[22] .is_wysiwyg = "true";
+defparam \frequency_divider|out[22] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X53_Y4_N18
+cycloneive_lcell_comb \frequency_divider|out[23]~77 (
+// Equation(s):
+// \frequency_divider|out[23]~77_combout  = (\frequency_divider|out [23] & (!\frequency_divider|out[22]~76 )) # (!\frequency_divider|out [23] & ((\frequency_divider|out[22]~76 ) # (GND)))
+// \frequency_divider|out[23]~78  = CARRY((!\frequency_divider|out[22]~76 ) # (!\frequency_divider|out [23]))
+
+	.dataa(gnd),
+	.datab(\frequency_divider|out [23]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\frequency_divider|out[22]~76 ),
+	.combout(\frequency_divider|out[23]~77_combout ),
+	.cout(\frequency_divider|out[23]~78 ));
+// synopsys translate_off
+defparam \frequency_divider|out[23]~77 .lut_mask = 16'h3C3F;
+defparam \frequency_divider|out[23]~77 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X53_Y4_N19
+dffeas \frequency_divider|out[23] (
+	.clk(\fpga_clock~inputclkctrl_outclk ),
+	.d(\frequency_divider|out[23]~77_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(\frequency_divider|out[28]~32_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\frequency_divider|out [23]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \frequency_divider|out[23] .is_wysiwyg = "true";
+defparam \frequency_divider|out[23] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X53_Y4_N20
+cycloneive_lcell_comb \frequency_divider|out[24]~79 (
+// Equation(s):
+// \frequency_divider|out[24]~79_combout  = (\frequency_divider|out [24] & (\frequency_divider|out[23]~78  $ (GND))) # (!\frequency_divider|out [24] & (!\frequency_divider|out[23]~78  & VCC))
+// \frequency_divider|out[24]~80  = CARRY((\frequency_divider|out [24] & !\frequency_divider|out[23]~78 ))
+
+	.dataa(gnd),
+	.datab(\frequency_divider|out [24]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\frequency_divider|out[23]~78 ),
+	.combout(\frequency_divider|out[24]~79_combout ),
+	.cout(\frequency_divider|out[24]~80 ));
+// synopsys translate_off
+defparam \frequency_divider|out[24]~79 .lut_mask = 16'hC30C;
+defparam \frequency_divider|out[24]~79 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X53_Y4_N21
+dffeas \frequency_divider|out[24] (
+	.clk(\fpga_clock~inputclkctrl_outclk ),
+	.d(\frequency_divider|out[24]~79_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(\frequency_divider|out[28]~32_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\frequency_divider|out [24]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \frequency_divider|out[24] .is_wysiwyg = "true";
+defparam \frequency_divider|out[24] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X53_Y4_N22
+cycloneive_lcell_comb \frequency_divider|out[25]~81 (
+// Equation(s):
+// \frequency_divider|out[25]~81_combout  = (\frequency_divider|out [25] & (!\frequency_divider|out[24]~80 )) # (!\frequency_divider|out [25] & ((\frequency_divider|out[24]~80 ) # (GND)))
+// \frequency_divider|out[25]~82  = CARRY((!\frequency_divider|out[24]~80 ) # (!\frequency_divider|out [25]))
+
+	.dataa(\frequency_divider|out [25]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\frequency_divider|out[24]~80 ),
+	.combout(\frequency_divider|out[25]~81_combout ),
+	.cout(\frequency_divider|out[25]~82 ));
+// synopsys translate_off
+defparam \frequency_divider|out[25]~81 .lut_mask = 16'h5A5F;
+defparam \frequency_divider|out[25]~81 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X53_Y4_N23
+dffeas \frequency_divider|out[25] (
+	.clk(\fpga_clock~inputclkctrl_outclk ),
+	.d(\frequency_divider|out[25]~81_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(\frequency_divider|out[28]~32_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\frequency_divider|out [25]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \frequency_divider|out[25] .is_wysiwyg = "true";
+defparam \frequency_divider|out[25] .power_up = "low";
+// synopsys translate_on
+
+// Location: FF_X53_Y4_N25
+dffeas \frequency_divider|out[26] (
+	.clk(\fpga_clock~inputclkctrl_outclk ),
+	.d(\frequency_divider|out[26]~83_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(\frequency_divider|out[28]~32_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\frequency_divider|out [26]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \frequency_divider|out[26] .is_wysiwyg = "true";
+defparam \frequency_divider|out[26] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X55_Y4_N4
+cycloneive_lcell_comb \frequency_divider|Equal3~2 (
+// Equation(s):
+// \frequency_divider|Equal3~2_combout  = (!\frequency_divider|out [26] & \frequency_divider|out [28])
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\frequency_divider|out [26]),
+	.datad(\frequency_divider|out [28]),
+	.cin(gnd),
+	.combout(\frequency_divider|Equal3~2_combout ),
+	.cout());
+// synopsys translate_off
+defparam \frequency_divider|Equal3~2 .lut_mask = 16'h0F00;
+defparam \frequency_divider|Equal3~2 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X55_Y4_N14
+cycloneive_lcell_comb \frequency_divider|Equal3~1 (
+// Equation(s):
+// \frequency_divider|Equal3~1_combout  = (!\frequency_divider|out [18] & (!\frequency_divider|out [14] & (!\frequency_divider|out [20] & \frequency_divider|out [9])))
+
+	.dataa(\frequency_divider|out [18]),
+	.datab(\frequency_divider|out [14]),
+	.datac(\frequency_divider|out [20]),
+	.datad(\frequency_divider|out [9]),
+	.cin(gnd),
+	.combout(\frequency_divider|Equal3~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \frequency_divider|Equal3~1 .lut_mask = 16'h0100;
+defparam \frequency_divider|Equal3~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X54_Y4_N26
+cycloneive_lcell_comb \frequency_divider|Equal3~3 (
+// Equation(s):
+// \frequency_divider|Equal3~3_combout  = (\frequency_divider|Equal3~2_combout  & (\frequency_divider|Equal3~0_combout  & (\frequency_divider|Equal3~1_combout  & \frequency_divider|Equal2~1_combout )))
+
+	.dataa(\frequency_divider|Equal3~2_combout ),
+	.datab(\frequency_divider|Equal3~0_combout ),
+	.datac(\frequency_divider|Equal3~1_combout ),
+	.datad(\frequency_divider|Equal2~1_combout ),
+	.cin(gnd),
+	.combout(\frequency_divider|Equal3~3_combout ),
+	.cout());
+// synopsys translate_off
+defparam \frequency_divider|Equal3~3 .lut_mask = 16'h8000;
+defparam \frequency_divider|Equal3~3 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X55_Y4_N20
+cycloneive_lcell_comb \frequency_divider|Mux29~0 (
+// Equation(s):
+// \frequency_divider|Mux29~0_combout  = (\select1~input_o  & (((\select2~input_o )))) # (!\select1~input_o  & ((\select2~input_o  & (\frequency_divider|Equal1~3_combout )) # (!\select2~input_o  & ((\frequency_divider|Equal0~9_combout )))))
+
+	.dataa(\frequency_divider|Equal1~3_combout ),
+	.datab(\select1~input_o ),
+	.datac(\select2~input_o ),
+	.datad(\frequency_divider|Equal0~9_combout ),
+	.cin(gnd),
+	.combout(\frequency_divider|Mux29~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \frequency_divider|Mux29~0 .lut_mask = 16'hE3E0;
+defparam \frequency_divider|Mux29~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X55_Y4_N12
+cycloneive_lcell_comb \frequency_divider|Mux29~1 (
+// Equation(s):
+// \frequency_divider|Mux29~1_combout  = (\select1~input_o  & ((\frequency_divider|Mux29~0_combout  & (\frequency_divider|Equal3~3_combout )) # (!\frequency_divider|Mux29~0_combout  & ((\frequency_divider|Equal2~2_combout ))))) # (!\select1~input_o  & 
+// (((\frequency_divider|Mux29~0_combout ))))
+
+	.dataa(\frequency_divider|Equal3~3_combout ),
+	.datab(\select1~input_o ),
+	.datac(\frequency_divider|Equal2~2_combout ),
+	.datad(\frequency_divider|Mux29~0_combout ),
+	.cin(gnd),
+	.combout(\frequency_divider|Mux29~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \frequency_divider|Mux29~1 .lut_mask = 16'hBBC0;
+defparam \frequency_divider|Mux29~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X55_Y4_N13
+dffeas \frequency_divider|filtered_clock (
+	.clk(\fpga_clock~inputclkctrl_outclk ),
+	.d(\frequency_divider|Mux29~1_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\frequency_divider|filtered_clock~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \frequency_divider|filtered_clock .is_wysiwyg = "true";
+defparam \frequency_divider|filtered_clock .power_up = "low";
+// synopsys translate_on
+
+// Location: CLKCTRL_G17
+cycloneive_clkctrl \frequency_divider|filtered_clock~clkctrl (
+	.ena(vcc),
+	.inclk({vcc,vcc,vcc,\frequency_divider|filtered_clock~q }),
+	.clkselect(2'b00),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.outclk(\frequency_divider|filtered_clock~clkctrl_outclk ));
+// synopsys translate_off
+defparam \frequency_divider|filtered_clock~clkctrl .clock_type = "global clock";
+defparam \frequency_divider|filtered_clock~clkctrl .ena_register_mode = "none";
+// synopsys translate_on
+
+// Location: LCCOMB_X60_Y72_N12
+cycloneive_lcell_comb \counter|Q[0]~2 (
+// Equation(s):
+// \counter|Q[0]~2_combout  = !\counter|Q [0]
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\counter|Q [0]),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\counter|Q[0]~2_combout ),
+	.cout());
+// synopsys translate_off
+defparam \counter|Q[0]~2 .lut_mask = 16'h0F0F;
+defparam \counter|Q[0]~2 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y36_N15
+cycloneive_io_ibuf \reset~input (
+	.i(reset),
+	.ibar(gnd),
+	.o(\reset~input_o ));
+// synopsys translate_off
+defparam \reset~input .bus_hold = "false";
+defparam \reset~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: CLKCTRL_G4
+cycloneive_clkctrl \reset~inputclkctrl (
+	.ena(vcc),
+	.inclk({vcc,vcc,vcc,\reset~input_o }),
+	.clkselect(2'b00),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.outclk(\reset~inputclkctrl_outclk ));
+// synopsys translate_off
+defparam \reset~inputclkctrl .clock_type = "global clock";
+defparam \reset~inputclkctrl .ena_register_mode = "none";
+// synopsys translate_on
+
+// Location: FF_X60_Y72_N13
+dffeas \counter|Q[0] (
+	.clk(!\frequency_divider|filtered_clock~clkctrl_outclk ),
+	.d(\counter|Q[0]~2_combout ),
+	.asdata(vcc),
+	.clrn(!\reset~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\counter|Q [0]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \counter|Q[0] .is_wysiwyg = "true";
+defparam \counter|Q[0] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X60_Y72_N10
+cycloneive_lcell_comb \counter|Q[1]~0 (
+// Equation(s):
+// \counter|Q[1]~0_combout  = \counter|Q [1] $ (\counter|Q [0])
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\counter|Q [1]),
+	.datad(\counter|Q [0]),
+	.cin(gnd),
+	.combout(\counter|Q[1]~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \counter|Q[1]~0 .lut_mask = 16'h0FF0;
+defparam \counter|Q[1]~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X60_Y72_N11
+dffeas \counter|Q[1] (
+	.clk(!\frequency_divider|filtered_clock~clkctrl_outclk ),
+	.d(\counter|Q[1]~0_combout ),
+	.asdata(vcc),
+	.clrn(!\reset~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\counter|Q [1]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \counter|Q[1] .is_wysiwyg = "true";
+defparam \counter|Q[1] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X60_Y72_N28
+cycloneive_lcell_comb \counter|Q[2]~1 (
+// Equation(s):
+// \counter|Q[2]~1_combout  = \counter|Q [2] $ (((\counter|Q [1] & \counter|Q [0])))
+
+	.dataa(\counter|Q [1]),
+	.datab(gnd),
+	.datac(\counter|Q [2]),
+	.datad(\counter|Q [0]),
+	.cin(gnd),
+	.combout(\counter|Q[2]~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \counter|Q[2]~1 .lut_mask = 16'h5AF0;
+defparam \counter|Q[2]~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X60_Y72_N29
+dffeas \counter|Q[2] (
+	.clk(!\frequency_divider|filtered_clock~clkctrl_outclk ),
+	.d(\counter|Q[2]~1_combout ),
+	.asdata(vcc),
+	.clrn(!\reset~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\counter|Q [2]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \counter|Q[2] .is_wysiwyg = "true";
+defparam \counter|Q[2] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X60_Y72_N6
+cycloneive_lcell_comb \decoder|WideOr0~0 (
+// Equation(s):
+// \decoder|WideOr0~0_combout  = (!\counter|Q [1] & (\counter|Q [0] $ (\counter|Q [2])))
+
+	.dataa(gnd),
+	.datab(\counter|Q [1]),
+	.datac(\counter|Q [0]),
+	.datad(\counter|Q [2]),
+	.cin(gnd),
+	.combout(\decoder|WideOr0~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \decoder|WideOr0~0 .lut_mask = 16'h0330;
+defparam \decoder|WideOr0~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X60_Y72_N0
+cycloneive_lcell_comb \decoder|WideOr1~0 (
+// Equation(s):
+// \decoder|WideOr1~0_combout  = (\counter|Q [2] & (\counter|Q [1] $ (\counter|Q [0])))
+
+	.dataa(gnd),
+	.datab(\counter|Q [1]),
+	.datac(\counter|Q [0]),
+	.datad(\counter|Q [2]),
+	.cin(gnd),
+	.combout(\decoder|WideOr1~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \decoder|WideOr1~0 .lut_mask = 16'h3C00;
+defparam \decoder|WideOr1~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X60_Y72_N26
+cycloneive_lcell_comb \decoder|WideOr2~0 (
+// Equation(s):
+// \decoder|WideOr2~0_combout  = (\counter|Q [1] & (!\counter|Q [0] & !\counter|Q [2]))
+
+	.dataa(gnd),
+	.datab(\counter|Q [1]),
+	.datac(\counter|Q [0]),
+	.datad(\counter|Q [2]),
+	.cin(gnd),
+	.combout(\decoder|WideOr2~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \decoder|WideOr2~0 .lut_mask = 16'h000C;
+defparam \decoder|WideOr2~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X60_Y72_N4
+cycloneive_lcell_comb \decoder|WideOr3~0 (
+// Equation(s):
+// \decoder|WideOr3~0_combout  = (\counter|Q [1] & (\counter|Q [0] & \counter|Q [2])) # (!\counter|Q [1] & (\counter|Q [0] $ (\counter|Q [2])))
+
+	.dataa(gnd),
+	.datab(\counter|Q [1]),
+	.datac(\counter|Q [0]),
+	.datad(\counter|Q [2]),
+	.cin(gnd),
+	.combout(\decoder|WideOr3~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \decoder|WideOr3~0 .lut_mask = 16'hC330;
+defparam \decoder|WideOr3~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X60_Y72_N2
+cycloneive_lcell_comb \decoder|WideOr4~0 (
+// Equation(s):
+// \decoder|WideOr4~0_combout  = (\counter|Q [0]) # ((!\counter|Q [1] & \counter|Q [2]))
+
+	.dataa(gnd),
+	.datab(\counter|Q [1]),
+	.datac(\counter|Q [0]),
+	.datad(\counter|Q [2]),
+	.cin(gnd),
+	.combout(\decoder|WideOr4~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \decoder|WideOr4~0 .lut_mask = 16'hF3F0;
+defparam \decoder|WideOr4~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X60_Y72_N24
+cycloneive_lcell_comb \decoder|WideOr5~0 (
+// Equation(s):
+// \decoder|WideOr5~0_combout  = (\counter|Q [1] & ((\counter|Q [0]) # (!\counter|Q [2]))) # (!\counter|Q [1] & (\counter|Q [0] & !\counter|Q [2]))
+
+	.dataa(gnd),
+	.datab(\counter|Q [1]),
+	.datac(\counter|Q [0]),
+	.datad(\counter|Q [2]),
+	.cin(gnd),
+	.combout(\decoder|WideOr5~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \decoder|WideOr5~0 .lut_mask = 16'hC0FC;
+defparam \decoder|WideOr5~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X60_Y72_N22
+cycloneive_lcell_comb \decoder|WideOr6~0 (
+// Equation(s):
+// \decoder|WideOr6~0_combout  = (\counter|Q [1] & ((!\counter|Q [2]) # (!\counter|Q [0]))) # (!\counter|Q [1] & ((\counter|Q [2])))
+
+	.dataa(gnd),
+	.datab(\counter|Q [1]),
+	.datac(\counter|Q [0]),
+	.datad(\counter|Q [2]),
+	.cin(gnd),
+	.combout(\decoder|WideOr6~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \decoder|WideOr6~0 .lut_mask = 16'h3FCC;
+defparam \decoder|WideOr6~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+assign filtered_clock = \filtered_clock~output_o ;
+
+assign Q[0] = \Q[0]~output_o ;
+
+assign Q[1] = \Q[1]~output_o ;
+
+assign Q[2] = \Q[2]~output_o ;
+
+assign Q[3] = \Q[3]~output_o ;
+
+assign a = \a~output_o ;
+
+assign b = \b~output_o ;
+
+assign c = \c~output_o ;
+
+assign d = \d~output_o ;
+
+assign e = \e~output_o ;
+
+assign f = \f~output_o ;
+
+assign g = \g~output_o ;
+
+endmodule
+
+module hard_block (
+
+	devpor,
+	devclrn,
+	devoe);
+
+// Design Ports Information
+// ~ALTERA_ASDO_DATA1~	=>  Location: PIN_F4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_FLASH_nCE_nCSO~	=>  Location: PIN_E2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_DCLK~	=>  Location: PIN_P3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_DATA0~	=>  Location: PIN_N7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_nCEO~	=>  Location: PIN_P28,	 I/O Standard: 2.5 V,	 Current Strength: 8mA
+
+input 	devpor;
+input 	devclrn;
+input 	devoe;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+wire \~ALTERA_ASDO_DATA1~~padout ;
+wire \~ALTERA_FLASH_nCE_nCSO~~padout ;
+wire \~ALTERA_DATA0~~padout ;
+wire \~ALTERA_ASDO_DATA1~~ibuf_o ;
+wire \~ALTERA_FLASH_nCE_nCSO~~ibuf_o ;
+wire \~ALTERA_DATA0~~ibuf_o ;
+
+
+endmodule

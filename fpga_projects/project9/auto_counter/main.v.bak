@@ -1,0 +1,6 @@
+module main(
+	input wire fpga_clock, reset
+	output wire [3:0] Q,
+	output wire a, b, c, d, e, f, g
+);
+

@@ -1,0 +1,13 @@
+
+State Machine - |main|mealy_state_machine:state_machine|actualState
+Name actualState.displayOff actualState.I actualState.H actualState.G actualState.F actualState.E actualState.D actualState.C actualState.B actualState.A 
+actualState.A 0 0 0 0 0 0 0 0 0 0 
+actualState.B 0 0 0 0 0 0 0 0 1 1 
+actualState.C 0 0 0 0 0 0 0 1 0 1 
+actualState.D 0 0 0 0 0 0 1 0 0 1 
+actualState.E 0 0 0 0 0 1 0 0 0 1 
+actualState.F 0 0 0 0 1 0 0 0 0 1 
+actualState.G 0 0 0 1 0 0 0 0 0 1 
+actualState.H 0 0 1 0 0 0 0 0 0 1 
+actualState.I 0 1 0 0 0 0 0 0 0 1 
+actualState.displayOff 1 0 0 0 0 0 0 0 0 1 

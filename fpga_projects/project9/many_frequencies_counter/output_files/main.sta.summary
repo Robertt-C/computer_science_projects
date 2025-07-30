@@ -1,0 +1,77 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'fpga_clock'
+Slack : -3.889
+TNS   : -110.403
+
+Type  : Slow 1200mV 85C Model Setup 'many_frequencies_divider:frequency_divider|filtered_clock'
+Slack : -0.199
+TNS   : -0.199
+
+Type  : Slow 1200mV 85C Model Hold 'many_frequencies_divider:frequency_divider|filtered_clock'
+Slack : 0.407
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'fpga_clock'
+Slack : 0.443
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'fpga_clock'
+Slack : -3.000
+TNS   : -41.550
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'many_frequencies_divider:frequency_divider|filtered_clock'
+Slack : -1.285
+TNS   : -3.855
+
+Type  : Slow 1200mV 0C Model Setup 'fpga_clock'
+Slack : -3.515
+TNS   : -99.273
+
+Type  : Slow 1200mV 0C Model Setup 'many_frequencies_divider:frequency_divider|filtered_clock'
+Slack : -0.083
+TNS   : -0.083
+
+Type  : Slow 1200mV 0C Model Hold 'many_frequencies_divider:frequency_divider|filtered_clock'
+Slack : 0.355
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'fpga_clock'
+Slack : 0.400
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'fpga_clock'
+Slack : -3.000
+TNS   : -41.550
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'many_frequencies_divider:frequency_divider|filtered_clock'
+Slack : -1.285
+TNS   : -3.855
+
+Type  : Fast 1200mV 0C Model Setup 'fpga_clock'
+Slack : -1.366
+TNS   : -37.933
+
+Type  : Fast 1200mV 0C Model Setup 'many_frequencies_divider:frequency_divider|filtered_clock'
+Slack : 0.410
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'many_frequencies_divider:frequency_divider|filtered_clock'
+Slack : 0.181
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'fpga_clock'
+Slack : 0.201
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'fpga_clock'
+Slack : -3.000
+TNS   : -34.863
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'many_frequencies_divider:frequency_divider|filtered_clock'
+Slack : -1.000
+TNS   : -3.000
+
+------------------------------------------------------------

@@ -1,0 +1,41 @@
+|asyncCounter
+a <= decoder_o_nine:inst1.outA
+resetButton => inst13.IN0
+asyncClock => inst12.IN0
+b <= decoder_o_nine:inst1.outB
+c <= decoder_o_nine:inst1.outC
+d <= decoder_o_nine:inst1.outD
+e <= decoder_o_nine:inst1.outE
+f <= decoder_o_nine:inst1.outF
+g <= decoder_o_nine:inst1.outG
+
+
+|asyncCounter|decoder_o_nine:inst1
+outA <= inst.DB_MAX_OUTPUT_PORT_TYPE
+W => instNW.IN0
+W => and8.IN0
+W => and9.IN0
+X => instNX.IN0
+X => and5.IN0
+X => and7.IN0
+X => and6.IN0
+X => and4.IN0
+Y => instNY.IN0
+Y => and3.IN1
+Y => and2.IN0
+Y => and7.IN1
+Y => and6.IN1
+Z => instNZ.IN0
+Z => and3.IN0
+Z => and5.IN1
+Z => and7.IN2
+Z => and9.IN1
+Z => and1.IN0
+outB <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+outC <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+outD <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+outE <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+outF <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+outG <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+

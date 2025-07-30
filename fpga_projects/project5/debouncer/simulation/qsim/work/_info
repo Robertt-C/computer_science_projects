@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/17.1/AProjetos/week5/debouncer/simulation/qsim
+vdebouncer
+Z0 !s110 1700445976
+!i10b 1
+!s100 OR6WdY[zJS1;d7SPjTGUZ3
+IEHF:LSFz3Y_[ll?^<e89l3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/intelFPGA_lite/17.1/AProjetos/project5/debouncer/simulation/qsim
+Z3 w1700445976
+Z4 8debouncer.vo
+Z5 Fdebouncer.vo
+L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1700445976.000000
+Z8 !s107 debouncer.vo|
+Z9 !s90 -work|work|debouncer.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vdebouncer_vlg_vec_tst
+R0
+!i10b 1
+!s100 5[5FG=VmSh9AEXemXZlIN0
+IY9HQFAd61L=Pi5bdZNAYg3
+R1
+R2
+w1700445975
+8Waveform4.vwf.vt
+FWaveform4.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform4.vwf.vt|
+!s90 -work|work|Waveform4.vwf.vt|
+!i113 1
+R10
+R11
+vhard_block
+R0
+!i10b 1
+!s100 :d3LHlmWP2J_dRzF2m`eh1
+IoZH:_1m3c[=Rz<m^9_g^92
+R1
+R2
+R3
+R4
+R5
+L0 672
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11

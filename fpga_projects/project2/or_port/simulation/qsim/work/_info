@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/17.1/AProjetos/or_port/simulation/qsim
+vhard_block
+Z0 !s110 1694370078
+!i10b 1
+!s100 jCRjddZ>XFK@YR`IbfSf?3
+I_llK38KmI_<@L]S8@8FJ@2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/intelFPGA_lite/17.1/AProjetos/week2/or_port/simulation/qsim
+Z3 w1694370078
+Z4 8or_port.vo
+Z5 For_port.vo
+L0 121
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1694370078.000000
+Z8 !s107 or_port.vo|
+Z9 !s90 -work|work|or_port.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vor_port
+R0
+!i10b 1
+!s100 Vf:fijI1cDLVMG`aMAUO53
+IjWR1lC6=nc9M5F2SaJk8F2
+R1
+R2
+R3
+R4
+R5
+L0 31
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vor_port_vlg_vec_tst
+R0
+!i10b 1
+!s100 OAL_OAa38m[GdVn5]kGfX2
+IDXV9Q3YGeXd1[gh8KC`7=2
+R1
+R2
+w1694370077
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11

@@ -1,0 +1,157 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/17.1/AProjetos/week7/simulation/qsim
+vfrequency_divider
+!s110 1697395592
+!i10b 1
+!s100 EX_cH9T6JNOAZZbl;Zo442
+IF973_Q`aG2jQfjz3K@PLE2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1697395591
+Z2 8state_machine.vo
+Z3 Fstate_machine.vo
+Z4 L0 31
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1697395592.000000
+Z6 !s107 state_machine.vo|
+Z7 !s90 -work|work|state_machine.vo|
+!i113 1
+Z8 o-work work
+Z9 tCvgOpt 0
+vfrequency_divider_vlg_vec_tst
+!s110 1697395593
+!i10b 1
+!s100 OcN6JjO=F3K:fMoaNHT^82
+IzTW=cf[^fzjeU31I[d`H]1
+R1
+R0
+w1697395590
+8Waveform7.vwf.vt
+FWaveform7.vwf.vt
+Z10 L0 29
+R5
+r1
+!s85 0
+31
+!s108 1697395593.000000
+!s107 Waveform7.vwf.vt|
+!s90 -work|work|Waveform7.vwf.vt|
+!i113 1
+R8
+R9
+vhard_block
+Z11 !s110 1699232786
+!i10b 1
+!s100 TC>Jk81ah5DK^SJ4fXRe?2
+IiQRl:nn5hjPCPcln^LfKJ3
+R1
+R0
+Z12 w1699232785
+R2
+R3
+L0 865
+R5
+r1
+!s85 0
+31
+Z13 !s108 1699232786.000000
+R6
+R7
+!i113 1
+R8
+R9
+vout_circuit
+Z14 !s110 1697397809
+!i10b 1
+!s100 CMS<?AJ<idZ?K?Q^:h:lc0
+IVYzUh5JaTTND9KdE=>J;63
+R1
+R0
+w1697397808
+R2
+R3
+R4
+R5
+r1
+!s85 0
+31
+Z15 !s108 1697397809.000000
+R6
+R7
+!i113 1
+R8
+R9
+vout_circuit_vlg_vec_tst
+R14
+!i10b 1
+!s100 K^VMnn8fbO7jdaZL9>EBT3
+IDXYeHHNi^;iN]AaRmN1_;0
+R1
+R0
+w1697397807
+8Waveform8.vwf.vt
+FWaveform8.vwf.vt
+R10
+R5
+r1
+!s85 0
+31
+R15
+!s107 Waveform8.vwf.vt|
+!s90 -work|work|Waveform8.vwf.vt|
+!i113 1
+R8
+R9
+vstate_machine
+R11
+!i10b 1
+!s100 ?dnl=02D0>Ra_9KmW1I603
+Ih0G?o@F`;O@9TT1XG1`P70
+R1
+R0
+R12
+R2
+R3
+R4
+R5
+r1
+!s85 0
+31
+R13
+R6
+R7
+!i113 1
+R8
+R9
+vstate_machine_vlg_vec_tst
+R11
+!i10b 1
+!s100 <F4T;SOF]Dco^^Q5^E[T]3
+I4fh^6HfZ^[H[Y]FmQ4F>Z2
+R1
+R0
+R12
+8Waveform4.vwf.vt
+FWaveform4.vwf.vt
+R10
+R5
+r1
+!s85 0
+31
+R13
+!s107 Waveform4.vwf.vt|
+!s90 -work|work|Waveform4.vwf.vt|
+!i113 1
+R8
+R9

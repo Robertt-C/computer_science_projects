@@ -1,0 +1,4 @@
+module debouncer(
+	input fpga_clock, clock,
+	output clock_output
+);

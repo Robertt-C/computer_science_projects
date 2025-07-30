@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/17.1/AProjetos/and_port/simulation/qsim
+vand_port
+Z1 !s110 1694279101
+!i10b 1
+!s100 HS^C962Z[6Sgj5MoBCMDS2
+IaMNRldhK[SLInEQQj91mk1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1694279101
+Z4 8and_port.vo
+Z5 Fand_port.vo
+L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1694279101.000000
+Z8 !s107 and_port.vo|
+Z9 !s90 -work|work|and_port.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vand_port_vlg_vec_tst
+R1
+!i10b 1
+!s100 5;aN?=4S4KWm3JNQBDn7O2
+IHBk7nj:00?Jlj5cLVB?M12
+R2
+R0
+w1694279100
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+vhard_block
+R1
+!i10b 1
+!s100 jCRjddZ>XFK@YR`IbfSf?3
+IEJB4JSm]CX8cT5Yn?ZNlD3
+R2
+R0
+R3
+R4
+R5
+L0 121
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11

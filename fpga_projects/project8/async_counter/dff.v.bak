@@ -1,0 +1,17 @@
+module d_ff(clock, clear, d, Q);
+
+input clock, clear, d;
+output reg Q;
+
+
+always @ (posedge clock);
+begin
+
+if (clear == 1)
+	Q <= 0;
+else 
+	Q <= d;
+
+end
+
+endmodule

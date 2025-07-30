@@ -1,0 +1,115 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/17.1/AProjetos/week5/desc_asc_async_counter/simulation/qsim
+vdecoder_o_nine
+Z1 !s110 1695594209
+!i10b 1
+!s100 bNU@=dU@<35MHiSKSBgDM2
+IZY9K?m?CUg02aQQN;jgk:2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1695594208
+Z4 8desc_asc_async_counter.vo
+Z5 Fdesc_asc_async_counter.vo
+Z6 L0 31
+Z7 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z8 !s108 1695594209.000000
+Z9 !s107 desc_asc_async_counter.vo|
+Z10 !s90 -work|work|desc_asc_async_counter.vo|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+vdecoder_o_nine_vlg_vec_tst
+R1
+!i10b 1
+!s100 ?J3J`?J7XPe;>gVUI@l6A1
+IFCHz`i=7L^I@TS`0IPP1F3
+R2
+R0
+w1695594207
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+Z13 L0 29
+R7
+r1
+!s85 0
+31
+R8
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R11
+R12
+vdesc_asc_async_counter
+!s110 1695323073
+!i10b 1
+!s100 OGSA0SZ]9Of^mSDjWVc]g0
+IbkzXfRgT`maUkVMi94d`^3
+R2
+R0
+w1695323072
+R4
+R5
+R6
+R7
+r1
+!s85 0
+31
+!s108 1695323073.000000
+R9
+R10
+!i113 1
+R11
+R12
+vdesc_asc_async_counter_vlg_vec_tst
+!s110 1695323074
+!i10b 1
+!s100 J[eMV>zQNW9O[0U]bKz5X1
+I?WB>fbOh3lHX?G0j:NDYJ1
+R2
+R0
+w1695323071
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+R13
+R7
+r1
+!s85 0
+31
+!s108 1695323074.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R11
+R12
+vhard_block
+R1
+!i10b 1
+!s100 @EL[O6?`jTdZ>C7Y`^RWD0
+IL;`o3ofVkb;WS3`5[26i82
+R2
+R0
+R3
+R4
+R5
+L0 371
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12

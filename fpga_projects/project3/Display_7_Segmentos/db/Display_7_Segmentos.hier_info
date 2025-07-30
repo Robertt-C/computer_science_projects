@@ -1,0 +1,34 @@
+|Display_7_Segmentos
+OUT_A <= t_a.DB_MAX_OUTPUT_PORT_TYPE
+W_a => t_a.IN0
+W_a => inst.IN0
+W_a => inst6.IN2
+W_a => inst7.IN1
+Z_d => inst9.IN0
+Z_d => inst8.IN0
+Z_d => t_c.IN2
+Z_d => inst12.IN0
+Z_d => inst16.IN0
+X_b => inst9.IN1
+X_b => inst10.IN0
+X_b => t_c.IN1
+X_b => inst16.IN2
+X_b => inst21.IN1
+X_b => inst20.IN1
+X_b => inst22.IN1
+Y_c => t_a.IN2
+Y_c => inst8.IN1
+Y_c => inst11.IN0
+Y_c => inst13.IN1
+Y_c => inst14.IN0
+Y_c => inst18.IN1
+Y_c => inst22.IN0
+Y_c => inst23.IN1
+OUT_B <= t_b.DB_MAX_OUTPUT_PORT_TYPE
+OUT_C <= t_c.DB_MAX_OUTPUT_PORT_TYPE
+OUT_D <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+OUT_E <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+OUT_F <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+OUT_G <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,7 @@
+Info (10281): Verilog HDL Declaration information at main.v(4): object "A" differs only in case from object "a" in the same scope File: C:/intelFPGA_lite/17.1/AProjetos/project11/mealy_state_machine/main.v Line: 4
+Info (10281): Verilog HDL Declaration information at main.v(4): object "B" differs only in case from object "b" in the same scope File: C:/intelFPGA_lite/17.1/AProjetos/project11/mealy_state_machine/main.v Line: 4
+Info (10281): Verilog HDL Declaration information at main.v(4): object "C" differs only in case from object "c" in the same scope File: C:/intelFPGA_lite/17.1/AProjetos/project11/mealy_state_machine/main.v Line: 4
+Info (10281): Verilog HDL Declaration information at main.v(4): object "D" differs only in case from object "d" in the same scope File: C:/intelFPGA_lite/17.1/AProjetos/project11/mealy_state_machine/main.v Line: 4
+Info (10281): Verilog HDL Declaration information at main.v(4): object "E" differs only in case from object "e" in the same scope File: C:/intelFPGA_lite/17.1/AProjetos/project11/mealy_state_machine/main.v Line: 4
+Info (10281): Verilog HDL Declaration information at main.v(4): object "F" differs only in case from object "f" in the same scope File: C:/intelFPGA_lite/17.1/AProjetos/project11/mealy_state_machine/main.v Line: 4
+Info (10281): Verilog HDL Declaration information at main.v(4): object "G" differs only in case from object "g" in the same scope File: C:/intelFPGA_lite/17.1/AProjetos/project11/mealy_state_machine/main.v Line: 4

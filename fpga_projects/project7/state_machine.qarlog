@@ -1,0 +1,23 @@
+Quartus Prime Archive log --	C:/intelFPGA_lite/17.1/AProjetos/week7/state_machine.qarlog
+
+Archive:	C:/intelFPGA_lite/17.1/AProjetos/week7/state_machine.qar
+Date:		Sun Nov 05 15:07:32 2023
+Quartus Prime		17.1.0 Build 590 10/25/2017 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/intelFPGA_lite/17.1/AProjetos/week7/Waveform.vwf
+C:/intelFPGA_lite/17.1/AProjetos/week7/Waveform1.vwf
+C:/intelFPGA_lite/17.1/AProjetos/week7/Waveform2.vwf
+C:/intelFPGA_lite/17.1/AProjetos/week7/decoder_o_nine.bdf
+C:/intelFPGA_lite/17.1/AProjetos/week7/frequency_divider.bdf
+C:/intelFPGA_lite/17.1/AProjetos/week7/input_circuit.bdf
+C:/intelFPGA_lite/17.1/AProjetos/week7/out_circuit.bdf
+C:/intelFPGA_lite/17.1/AProjetos/week7/register.bdf
+C:/intelFPGA_lite/17.1/AProjetos/week7/state_machine.bdf
+C:/intelFPGA_lite/17.1/AProjetos/week7/state_machine.qpf
+C:/intelFPGA_lite/17.1/AProjetos/week7/state_machine.qsf
+c:/intelfpga_lite/17.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 12 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

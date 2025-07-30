@@ -1,0 +1,52 @@
+|debouncer
+a <= decoder_o_nine:inst77.outA
+asyncReset => inst666.IN0
+selectAscDesc => inst18.IN0
+clock => digital_filter:inst1.manualClock
+fpgaClock => digital_filter:inst1.fpga_clock
+b <= decoder_o_nine:inst77.outB
+c <= decoder_o_nine:inst77.outC
+d <= decoder_o_nine:inst77.outD
+e <= decoder_o_nine:inst77.outE
+f <= decoder_o_nine:inst77.outF
+g <= decoder_o_nine:inst77.outG
+filtered_output <= filterClock.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|debouncer|decoder_o_nine:inst77
+outA <= inst.DB_MAX_OUTPUT_PORT_TYPE
+W => instNW.IN0
+W => and8.IN0
+W => and9.IN0
+X => instNX.IN0
+X => and5.IN0
+X => and7.IN0
+X => and6.IN0
+X => and4.IN0
+Y => instNY.IN0
+Y => and3.IN1
+Y => and2.IN0
+Y => and7.IN1
+Y => and6.IN1
+Z => instNZ.IN0
+Z => and3.IN0
+Z => and5.IN1
+Z => and7.IN2
+Z => and9.IN1
+Z => and1.IN0
+outB <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+outC <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+outD <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+outE <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+outF <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+outG <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|debouncer|digital_filter:inst1
+outFilterClock <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+fpga_clock => inst.CLK
+fpga_clock => inst1.CLK
+fpga_clock => inst2.CLK
+manualClock => inst.DATAIN
+
+

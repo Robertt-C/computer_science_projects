@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/17.1/AProjetos/week3/decoder_o_nine/simulation/qsim
+vhard_block
+Z1 !s110 1694718144
+!i10b 1
+!s100 @EL[O6?`jTdZ>C7Y`^RWD0
+IQ7:63NAnbNHlO^0k]6=1<0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1694718144
+Z4 8seven_segment_decoder_o_nine.vo
+Z5 Fseven_segment_decoder_o_nine.vo
+L0 371
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1694718144.000000
+Z8 !s107 seven_segment_decoder_o_nine.vo|
+Z9 !s90 -work|work|seven_segment_decoder_o_nine.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vseven_segment_decoder_o_nine
+R1
+!i10b 1
+!s100 Wc>KdhCGMd=]>dAEjm4@N2
+IG<FcCNNNfL5CQM4<?I`F71
+R2
+R0
+R3
+R4
+R5
+L0 31
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vseven_segment_decoder_o_nine_vlg_vec_tst
+R1
+!i10b 1
+!s100 F?CJ]:?eFZd>>1ZZMj^f^2
+IJXN;QYo]h@a3kakRa]8<`1
+R2
+R0
+w1694718143
+8Waveform2.vwf.vt
+FWaveform2.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform2.vwf.vt|
+!s90 -work|work|Waveform2.vwf.vt|
+!i113 1
+R10
+R11

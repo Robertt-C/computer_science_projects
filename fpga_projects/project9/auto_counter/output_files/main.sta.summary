@@ -1,0 +1,77 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'fpga_clock'
+Slack : -2.640
+TNS   : -46.961
+
+Type  : Slow 1200mV 85C Model Setup 'frequency_divider:frequency_divider_1hz|filtered_clock'
+Slack : -0.201
+TNS   : -0.201
+
+Type  : Slow 1200mV 85C Model Hold 'frequency_divider:frequency_divider_1hz|filtered_clock'
+Slack : 0.405
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'fpga_clock'
+Slack : 0.547
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'fpga_clock'
+Slack : -3.000
+TNS   : -37.695
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'frequency_divider:frequency_divider_1hz|filtered_clock'
+Slack : -1.285
+TNS   : -3.855
+
+Type  : Slow 1200mV 0C Model Setup 'fpga_clock'
+Slack : -2.344
+TNS   : -39.659
+
+Type  : Slow 1200mV 0C Model Setup 'frequency_divider:frequency_divider_1hz|filtered_clock'
+Slack : -0.083
+TNS   : -0.083
+
+Type  : Slow 1200mV 0C Model Hold 'frequency_divider:frequency_divider_1hz|filtered_clock'
+Slack : 0.355
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'fpga_clock'
+Slack : 0.497
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'fpga_clock'
+Slack : -3.000
+TNS   : -37.695
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'frequency_divider:frequency_divider_1hz|filtered_clock'
+Slack : -1.285
+TNS   : -3.855
+
+Type  : Fast 1200mV 0C Model Setup 'fpga_clock'
+Slack : -0.762
+TNS   : -9.908
+
+Type  : Fast 1200mV 0C Model Setup 'frequency_divider:frequency_divider_1hz|filtered_clock'
+Slack : 0.410
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'frequency_divider:frequency_divider_1hz|filtered_clock'
+Slack : 0.181
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'fpga_clock'
+Slack : 0.251
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'fpga_clock'
+Slack : -3.000
+TNS   : -31.843
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'frequency_divider:frequency_divider_1hz|filtered_clock'
+Slack : -1.000
+TNS   : -3.000
+
+------------------------------------------------------------

@@ -1,0 +1,17 @@
+Quartus Prime Archive log --	C:/intelFPGA_lite/17.1/AProjetos/week4/threeBitsCounterSync/threeBitsCounterSync.qarlog
+
+Archive:	C:/intelFPGA_lite/17.1/AProjetos/week4/threeBitsCounterSync/threeBitsCounterSync.qar
+Date:		Thu Sep 14 16:44:29 2023
+Quartus Prime		17.1.0 Build 590 10/25/2017 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/intelFPGA_lite/17.1/AProjetos/week4/threeBitsCounterSync/Waveform.vwf
+C:/intelFPGA_lite/17.1/AProjetos/week4/threeBitsCounterSync/decoder_o_nine.bdf
+C:/intelFPGA_lite/17.1/AProjetos/week4/threeBitsCounterSync/threeBitsCounterSync.bdf
+C:/intelFPGA_lite/17.1/AProjetos/week4/threeBitsCounterSync/threeBitsCounterSync.qpf
+C:/intelFPGA_lite/17.1/AProjetos/week4/threeBitsCounterSync/threeBitsCounterSync.qsf
+c:/intelfpga_lite/17.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 6 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

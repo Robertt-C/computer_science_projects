@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/17.1/AProjetos/week4/threeBitsCounter/simulation/qsim
+vasyncCounter
+Z1 !s110 1694719300
+!i10b 1
+!s100 GgmU5T<AW@gB>z7GVV03K2
+I>`K[@niflWLKmk1d6gLI30
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1694719300
+Z4 8asyncCounter.vo
+Z5 FasyncCounter.vo
+L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1694719300.000000
+Z8 !s107 asyncCounter.vo|
+Z9 !s90 -work|work|asyncCounter.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+nasync@counter
+vasyncCounter_vlg_vec_tst
+R1
+!i10b 1
+!s100 BlYi__9BaF0B<SW9Y[n872
+IXP^SZj`GjR:T6LVRhR]EC2
+R2
+R0
+w1694719299
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+nasync@counter_vlg_vec_tst
+vhard_block
+R1
+!i10b 1
+!s100 IIPYmLNoel5czmnQgof[D1
+I9i5i]Aii4W:1Cz[O:3jhK2
+R2
+R0
+R3
+R4
+R5
+L0 489
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11

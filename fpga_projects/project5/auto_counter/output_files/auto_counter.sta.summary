@@ -1,0 +1,113 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'asyncClock'
+Slack : -2.199
+TNS   : -2.199
+
+Type  : Slow 1200mV 85C Model Setup 'inst7'
+Slack : -0.799
+TNS   : -0.799
+
+Type  : Slow 1200mV 85C Model Setup 'inst8'
+Slack : 0.210
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'inst8'
+Slack : 0.445
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'inst7'
+Slack : 0.725
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'asyncClock'
+Slack : 1.978
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'asyncClock'
+Slack : -3.000
+TNS   : -4.285
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'inst7'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'inst8'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 0C Model Setup 'asyncClock'
+Slack : -1.883
+TNS   : -1.883
+
+Type  : Slow 1200mV 0C Model Setup 'inst7'
+Slack : -0.713
+TNS   : -0.713
+
+Type  : Slow 1200mV 0C Model Setup 'inst8'
+Slack : 0.297
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'inst8'
+Slack : 0.398
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'inst7'
+Slack : 0.701
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'asyncClock'
+Slack : 1.726
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'asyncClock'
+Slack : -3.000
+TNS   : -4.285
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'inst7'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'inst8'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Fast 1200mV 0C Model Setup 'asyncClock'
+Slack : -0.587
+TNS   : -0.587
+
+Type  : Fast 1200mV 0C Model Setup 'inst7'
+Slack : -0.046
+TNS   : -0.046
+
+Type  : Fast 1200mV 0C Model Setup 'inst8'
+Slack : 0.624
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'inst8'
+Slack : 0.206
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'inst7'
+Slack : 0.253
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'asyncClock'
+Slack : 0.722
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'asyncClock'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'inst7'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'inst8'
+Slack : -1.000
+TNS   : -1.000
+
+------------------------------------------------------------

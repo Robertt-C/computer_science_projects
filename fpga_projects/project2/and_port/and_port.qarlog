@@ -1,0 +1,22 @@
+Quartus Prime Archive log --	C:/intelFPGA_lite/17.1/AProjetos/week2/and_port/and_port.qarlog
+
+Archive:	C:/intelFPGA_lite/17.1/AProjetos/week2/and_port/and_port.qar
+Date:		Sun Sep 10 18:17:54 2023
+Quartus Prime		17.1.0 Build 590 10/25/2017 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/intelFPGA_lite/17.1/AProjetos/week2/and_port/Waveform.vwf
+C:/intelFPGA_lite/17.1/AProjetos/week2/and_port/and_port.bdf
+C:/intelFPGA_lite/17.1/AProjetos/week2/and_port/and_port.qpf
+C:/intelFPGA_lite/17.1/AProjetos/week2/and_port/and_port.qsf
+c:/intelfpga_lite/17.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 5 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Sun Sep 10 18:22:31 2023
+Source archive file:	C:/intelFPGA_lite/17.1/AProjetos/week2/and_port/and_port.qar
+Archive was extracted into	C:/intelFPGA_lite/17.1/AProjetos/week2/and_port/and_port_restored/
+		 - successfully.

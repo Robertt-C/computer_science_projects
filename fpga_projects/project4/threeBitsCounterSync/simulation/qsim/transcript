@@ -1,0 +1,36 @@
+# do threeBitsCounterSync.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:29:49 on Sep 19,2023
+# vlog -work work threeBitsCounterSync.vo 
+# -- Compiling module threeBitsCounterSync
+# -- Compiling module hard_block
+# 
+# Top level modules:
+# 	threeBitsCounterSync
+# End time: 15:29:49 on Sep 19,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:29:49 on Sep 19,2023
+# vlog -work work Waveform1.vwf.vt 
+# -- Compiling module threeBitsCounterSync_vlg_vec_tst
+# 
+# Top level modules:
+# 	threeBitsCounterSync_vlg_vec_tst
+# End time: 15:29:49 on Sep 19,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.threeBitsCounterSync_vlg_vec_tst 
+# Start time: 15:29:50 on Sep 19,2023
+# Loading work.threeBitsCounterSync_vlg_vec_tst
+# Loading work.threeBitsCounterSync
+# Loading work.hard_block
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
+# Loading altera_ver.PRIM_GDFF_LOW
+# after#26
+# ** Note: $finish    : Waveform1.vwf.vt(58)
+#    Time: 1 us  Iteration: 0  Instance: /threeBitsCounterSync_vlg_vec_tst
+# End time: 15:29:50 on Sep 19,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

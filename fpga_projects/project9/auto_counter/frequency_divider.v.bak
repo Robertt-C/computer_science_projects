@@ -1,0 +1,24 @@
+module frequency_divider(
+	input fpga_clock,
+	output output_clock
+);
+
+
+reg [25:0] OUT;
+
+always @ (posedge fpga_clock)
+	if (output_clock == 26’d50000000)
+		
+		begin
+			OUT<= 26’d0;
+			output_clock <= 1;
+		end
+		
+	else
+		
+		begin
+			output_clock <= output_clock + 1;
+			S <= 0;
+		end
+
+endmodule

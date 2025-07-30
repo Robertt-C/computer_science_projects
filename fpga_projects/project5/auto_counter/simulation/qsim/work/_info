@@ -1,0 +1,115 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/17.1/AProjetos/week5/auto_counter/simulation/qsim
+vauto_counter
+Z1 !s110 1695407625
+!i10b 1
+!s100 0ze3nPno^[@G8Kd74eHDV2
+I`>HHc3T:BROLg5WPoc7YW1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1695407623
+Z4 8auto_counter.vo
+Z5 Fauto_counter.vo
+Z6 L0 31
+Z7 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z8 !s108 1695407625.000000
+Z9 !s107 auto_counter.vo|
+Z10 !s90 -work|work|auto_counter.vo|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+vauto_counter_vlg_vec_tst
+R1
+!i10b 1
+!s100 RkD9JZ]O;E`G]>6SNen120
+IZmDg?MimIE>V1LE<^aH4i0
+R2
+R0
+w1695407622
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+Z13 L0 29
+R7
+r1
+!s85 0
+31
+R8
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R11
+R12
+vfrequency_divider
+Z14 !s110 1695406945
+!i10b 1
+!s100 `2iI3TLEPP0Ddel3B6kRY0
+If;g[iNX7Jm7b;eAGV]2ES0
+R2
+R0
+w1695406944
+R4
+R5
+R6
+R7
+r1
+!s85 0
+31
+Z15 !s108 1695406945.000000
+R9
+R10
+!i113 1
+R11
+R12
+vfrequency_divider_vlg_vec_tst
+R14
+!i10b 1
+!s100 7kD1SIDbae1N67nV5274z0
+ITYK3R^APPe3jU]NRUgTlJ2
+R2
+R0
+w1695406942
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+R13
+R7
+r1
+!s85 0
+31
+R15
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R11
+R12
+vhard_block
+R1
+!i10b 1
+!s100 EZ@U<o?9Ej0k_Z[1L84bA3
+IOeY[jkAgZLj_[SF0FWeo?3
+R2
+R0
+R3
+R4
+R5
+L0 507
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12

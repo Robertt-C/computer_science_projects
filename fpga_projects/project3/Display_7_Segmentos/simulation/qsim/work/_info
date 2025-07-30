@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/17.1/AProjetos/week3/Display_7_Segmentos/simulation/qsim
+vDisplay_7_Segmentos
+Z1 !s110 1694372348
+!i10b 1
+!s100 2OUonXZkAY0<k>;nAK<9l2
+ILJMoLeWf7=GU@7cd;zK1I1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1694372347
+Z4 8Display_7_Segmentos.vo
+Z5 FDisplay_7_Segmentos.vo
+L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1694372347.000000
+Z8 !s107 Display_7_Segmentos.vo|
+Z9 !s90 -work|work|Display_7_Segmentos.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+n@display_7_@segmentos
+vDisplay_7_Segmentos_vlg_vec_tst
+R1
+!i10b 1
+!s100 0<_=IL`9281_@ZXPP;JMY3
+IOmL@6h^BTl_l=dlnNHlAJ2
+R2
+R0
+w1694372346
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+!s108 1694372348.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+n@display_7_@segmentos_vlg_vec_tst
+vhard_block
+R1
+!i10b 1
+!s100 @EL[O6?`jTdZ>C7Y`^RWD0
+IXa3N5B]5lXja05Qo_S@J[2
+R2
+R0
+R3
+R4
+R5
+L0 371
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11

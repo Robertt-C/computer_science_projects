@@ -1,0 +1,14 @@
+module main(
+	input wire fpga_clock, clock,
+	output wire [3:0] Q,
+	output wire a, b, c, d, e, f, g
+);
+
+
+
+debouncer debounce();
+sync_counter_4b();
+decoder_o_nine decoder();
+
+
+endmodule

@@ -1,0 +1,4 @@
+Info (10281): Verilog HDL Declaration information at decoder_o_nine.v(3): object "A" differs only in case from object "a" in the same scope File: C:/intelFPGA_lite/17.1/AProjetos/project8/decoder_o_nine/decoder_o_nine.v Line: 3
+Info (10281): Verilog HDL Declaration information at decoder_o_nine.v(3): object "B" differs only in case from object "b" in the same scope File: C:/intelFPGA_lite/17.1/AProjetos/project8/decoder_o_nine/decoder_o_nine.v Line: 3
+Info (10281): Verilog HDL Declaration information at decoder_o_nine.v(3): object "C" differs only in case from object "c" in the same scope File: C:/intelFPGA_lite/17.1/AProjetos/project8/decoder_o_nine/decoder_o_nine.v Line: 3
+Info (10281): Verilog HDL Declaration information at decoder_o_nine.v(3): object "D" differs only in case from object "d" in the same scope File: C:/intelFPGA_lite/17.1/AProjetos/project8/decoder_o_nine/decoder_o_nine.v Line: 3

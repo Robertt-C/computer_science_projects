@@ -1,0 +1,1 @@
+module async_counter_3b(clock, reset, Q2, Q1, Q0);
