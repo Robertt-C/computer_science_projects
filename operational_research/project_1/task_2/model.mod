@@ -16,18 +16,23 @@ minimize Cost:
 
 
 subject to RioDeJaneiroConsume:
-  belo_horizonte_rio_de_janeiro + ribeirao_preto_rio_de_janeiro + 
+  belo_horizonte_rio_de_janeiro + 
+  ribeirao_preto_rio_de_janeiro + 
   sao_jose_dos_campos_rio_de_janeiro = 180;
 
 subject to SaoPauloConsume:
-  belo_horizonte_sao_paulo + ribeirao_preto_sao_paulo + 
+  belo_horizonte_sao_paulo + 
+  ribeirao_preto_sao_paulo + 
   sao_jose_dos_campos_sao_paulo = 140;
 
 subject to BeloHorizonteSupply:
-  belo_horizonte_rio_de_janeiro + belo_horizonte_sao_paulo <= 70;
+  belo_horizonte_rio_de_janeiro + 
+  belo_horizonte_sao_paulo <= 70;
 
 subject to RibeiraoPretoSupply:
-  ribeirao_preto_rio_de_janeiro + ribeirao_preto_sao_paulo <= 130;
+  ribeirao_preto_rio_de_janeiro + 
+  ribeirao_preto_sao_paulo <= 130;
 
 subject to SaoJoseDosCamposSupply:
-  sao_jose_dos_campos_rio_de_janeiro + sao_jose_dos_campos_sao_paulo <= 120;
+  sao_jose_dos_campos_rio_de_janeiro + 
+  sao_jose_dos_campos_sao_paulo <= 120;
